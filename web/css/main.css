@@ -4,11 +4,18 @@ html{
 body {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	height: 100%;
+	width: 100%;
+	margin: 0%;
 
+}
+header{
+	background-image: url(/web/img/acupuncture_accueil.png);
+	background-color: #000000;
+	color: white;
 }
 main {
 	display: block;
-	height: 80%;
+	height: 75%;
 	padding-left: 2%;
 }
 
@@ -36,15 +43,82 @@ footer {
 	padding-right: 2%;
 }
 
-#menu {
-	border: black;
-	border-style: solid;
+nav {
+
+	background-color: rgb(98, 98,98);
 }
 
-#menu li {
-	display: inline;
-	padding-right: 2%;
+nav a{	
+	padding-top: 1%;
+	padding-bottom: 1%;
+	padding-right: 1%;
+	padding-left: 1%;
+	display: inline-block;
+	height: 100%;
+	color: white;
+	text-decoration:none;
 }
+
+nav a:hover{
+	background-color: #000000;
+}
+nav li {
+	display: inline;
+}
+
+#buttonConnexion {
+	
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	
+	background-color:#eae0c2;
+		
+	border-radius:15px;
+	
+	border:1px solid #333029;
+	
+	display:inline-block;
+	
+	cursor:pointer;
+	
+	color:#505739;
+	
+	font-family:arial;
+	
+	font-size:14px;
+	
+	font-weight:bold;
+	
+	padding:5px 7px;
+	
+	text-decoration:none;
+	
+	text-shadow:0px 1px 0px #ffffff;
+}
+
+
+#buttonConnexion:hover {
+	
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	
+	background-color:#ccc2a6;
+
+}
+
+
+#buttonConnexion:active {
+	
+	position:relative;
+	top:1px;
+}
+
+
+#formConnexion{
+	
+	display: inline;
+}
+
 
 #pathologies {
 	height: 100%;

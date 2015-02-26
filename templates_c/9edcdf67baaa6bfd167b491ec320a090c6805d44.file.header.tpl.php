@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-26 15:02:27
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-26 16:58:32
          compiled from "/Users/Baptiste/github/site-web-tli/tpl/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:134312774154ef1fdd23aed1-80736491%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9edcdf67baaa6bfd167b491ec320a090c6805d44' => 
     array (
       0 => '/Users/Baptiste/github/site-web-tli/tpl/header.tpl',
-      1 => 1424959321,
+      1 => 1424966264,
       2 => 'file',
     ),
   ),
@@ -42,16 +42,24 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<h1 id="titre">Acupuncture</h1>
     	
 		<!-- Informations utilisateur Boutons connexion/déconnexion -->
+		<form id="formConnexion">
 		<ul id="connexion">
+			<?php if (isset($_SESSION['username'])) {?>
 			<li>Utilisateur anonyme</li>
-			<li><button class="btn btn-primary">Connexion</button></li>
+			<?php } else { ?>
+			<li><label for="name">Nom :</label></li>
+			<li><input type="text" name="name"> </li>
+			<li><label for="password">Mot de Passe :</label></li>
+			<li><input type="password" name="password"> </li>
+			<li><button id="buttonConnexion">Connexion</button></li>
+			<?php }?>
 		</ul>
-    	
+		</form>
     	<!-- Menu de navigation -->
         <nav id="menu">
             	<ul class="nav navbar-nav">
-                	<li><a href="/index.php?page=index" >Accueil</a></li>
-                	<li><a href="/index.php?page=patho">Pathologies</a></li>
+                	<li><a href="/index.php?page=index" >ACCUEIL</a></li>
+                	<li><a href="/index.php?page=patho">PATHOLOGIES</a></li>
 				</ul>
         </nav>
     </header><?php }} ?>
