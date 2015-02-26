@@ -27,8 +27,8 @@
     	<!-- Menu de navigation -->
         <nav id="menu">
             	<ul class="nav navbar-nav">
-                	<li class="active"><a href="" >Accueil</a></li>
-                	<li><a href="/index.php?section=patho">Pathologies</a></li>
+                	<li><a href="/index.php?page=index" >Accueil</a></li>
+                	<li><a href="/index.php?page=patho">Pathologies</a></li>
 				</ul>
         </nav>
     </header>

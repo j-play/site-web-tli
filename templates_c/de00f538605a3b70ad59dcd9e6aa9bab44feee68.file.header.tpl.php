@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-26 14:16:25
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-26 14:40:38
          compiled from "/Users/jonathanplay/Documents/CPE/4IRC/TLI/site-web-tli/tpl/header.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:34087806654ef1adf6fc8f1-59919390%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:208106571354ef22562de307-87473820%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'de00f538605a3b70ad59dcd9e6aa9bab44feee68' => 
     array (
       0 => '/Users/jonathanplay/Documents/CPE/4IRC/TLI/site-web-tli/tpl/header.tpl',
-      1 => 1424956581,
+      1 => 1424957567,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '34087806654ef1adf6fc8f1-59919390',
+  'nocache_hash' => '208106571354ef22562de307-87473820',
   'function' => 
   array (
   ),
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_54ef1adf8611e8_10529068',
   'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_54ef225634b707_47779113',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54ef1adf8611e8_10529068')) {function content_54ef1adf8611e8_10529068($_smarty_tpl) {?><!DOCTYPE html>
+<?php if ($_valid && !is_callable('content_54ef225634b707_47779113')) {function content_54ef225634b707_47779113($_smarty_tpl) {?><!DOCTYPE html>
 
 <html lang="FR">
 <head>
@@ -50,8 +50,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     	<!-- Menu de navigation -->
         <nav id="menu">
             	<ul class="nav navbar-nav">
-                	<li class="active"><a href="" >Accueil</a></li>
-                	<li><a href="/index.php?section=patho">Pathologies</a></li>
+                	<li><a href="/index.php?page=index" >Accueil</a></li>
+                	<li><a href="/index.php?page=patho">Pathologies</a></li>
 				</ul>
         </nav>
     </header><?php }} ?>

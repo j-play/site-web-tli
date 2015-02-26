@@ -5,6 +5,7 @@
         $smarty->display(_TPL_.'pages/'.$_GET['page'].'.tpl');
     }
     else{
+    	echo 'test';
         $smarty->display(_TPL_ . 'pages/index.tpl');
     }
 	

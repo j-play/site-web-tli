@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-26 14:08:47
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-26 14:40:38
          compiled from "/Users/jonathanplay/Documents/CPE/4IRC/TLI/site-web-tli/tpl/footer.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:46002007854ef1adf8a52f9-22987170%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:32591358354ef225635ad53-13177523%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,15 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '46002007854ef1adf8a52f9-22987170',
+  'nocache_hash' => '32591358354ef225635ad53-13177523',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_54ef1adf8a7d74_75323313',
+  'unifunc' => 'content_54ef225635cda2_74909273',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_54ef1adf8a7d74_75323313')) {function content_54ef1adf8a7d74_75323313($_smarty_tpl) {?>		<footer>
+<?php if ($_valid && !is_callable('content_54ef225635cda2_74909273')) {function content_54ef225635cda2_74909273($_smarty_tpl) {?>		<footer>
 			<p id="info-footer">BoulayAndPlay Corp. G1R0C0 <a href="../html/webographie.html">Documentation développement</a></p>
 		</footer>
 	</body>
