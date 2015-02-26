@@ -24,10 +24,10 @@
 			{if isset($smarty.session.username)}
 			<li>Utilisateur anonyme</li>
 			{else}
-			<li><label for="name">Nom :</label></li>
-			<li><input type="text" name="name"> </li>
+			<li><label for="username">Nom :</label></li>
+			<li><input type="text" name="username" id="username"> </li>
 			<li><label for="password">Mot de Passe :</label></li>
-			<li><input type="password" name="password"> </li>
+			<li><input type="password" name="password" id="password"> </li>
 			<li><button id="buttonConnexion">Connexion</button></li>
 			{/if}
 		</ul>
