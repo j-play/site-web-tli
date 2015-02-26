@@ -8,11 +8,14 @@ body {
 }
 main {
 	display: block;
-	height: 100%;
+	height: 80%;
 	padding-left: 2%;
 }
 
 footer {
+	border-top-color: black;
+	border-top-style: solid;
+	border-top-width: thin;
 }
 
 #titre {
@@ -35,7 +38,7 @@ footer {
 
 #menu {
 	border: black;
-	border-style: inset;
+	border-style: solid;
 }
 
 #menu li {
