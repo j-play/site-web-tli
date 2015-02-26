@@ -1,5 +1,9 @@
 <?php
 
+/**
+* Script d'initialisation de la configuration du site
+* @author Play-Boulay
+*/
 	// Initialisation de la session
 	session_start();
 	header("Cache-Control: no-cache");
@@ -16,13 +20,13 @@
 	}
 
 	// Connexion Database
-	/*try {
-		$bdd = new PDO("mysql:host=localhost;dbname=pixyjob", "root", "");
+	try {
+		$bdd = new PDO("mysql:host=localhost;dbname=projet_TLI", "root", "root");
 		$bdd->query("SET NAMES UTF8");
 	} catch (Exception $e) {
     	echo "Problème de connexion à la base de donnée du site Acupuncture...";
     	die();
-	}*/
+	}
 
 	// Initialisation Smarty
 	$smarty = new Smarty();
