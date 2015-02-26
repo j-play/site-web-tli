@@ -1,0 +1,76 @@
+html{
+	height: 100%;
+}
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	height: 100%;
+
+}
+main {
+	display: block;
+	height: 100%;
+	padding-left: 2%;
+}
+
+footer {
+}
+
+#titre {
+	width:20%;
+	display: inline-block;
+	padding-left: 2%;
+}
+
+#connexion {
+	width: 74%;
+	display: inline-block;
+	list-style: none;
+	text-align: right;
+}
+
+#connexion li {
+	display: inline;
+	padding-right: 2%;
+}
+
+#menu {
+	border: black;
+	border-style: inset;
+}
+
+#menu li {
+	display: inline;
+	padding-right: 2%;
+}
+
+#pathologies {
+	height: 100%;
+}
+
+#corps-patho {
+	height: 70%;
+	border-top-color : black;
+	border-top-style: solid;
+	border-top-width: medium;
+}
+#filtres{
+	display: block;
+	margin-bottom: 1%;
+}
+#liste-fiches{
+	width: 20%;
+	height: 100%;
+	display: inline-block;
+	border-right-color: black;
+	border-right-style: solid;
+	border-right-width: medium;
+}
+
+#fiche-patho-select{
+	width: 74%;
+	display: inline-block;
+}
+
+#info-footer{
+	text-align: center;
+}
