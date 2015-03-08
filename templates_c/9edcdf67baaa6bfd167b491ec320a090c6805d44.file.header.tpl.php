@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-02-26 17:05:37
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-08 14:54:53
          compiled from "/Users/Baptiste/github/site-web-tli/tpl/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:134312774154ef1fdd23aed1-80736491%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9edcdf67baaa6bfd167b491ec320a090c6805d44' => 
     array (
       0 => '/Users/Baptiste/github/site-web-tli/tpl/header.tpl',
-      1 => 1424966729,
+      1 => 1425822890,
       2 => 'file',
     ),
   ),
@@ -51,7 +51,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<li><input type="text" name="username" id="username"> </li>
 			<li><label for="password">Mot de Passe :</label></li>
 			<li><input type="password" name="password" id="password"> </li>
-			<li><button id="buttonConnexion">Connexion</button></li>
+			<li><button id="buttonConnexion" class= "buttonHeader">Connexion</button></li>
+			<li><a href="/index.php?page=inscription" id="buttonInscripton" class= "buttonHeader">Inscription</a></li>
 			<?php }?>
 		</ul>
 		</form>

@@ -19,7 +19,7 @@
 		<h1 id="titre">Acupuncture</h1>
     	
 		<!-- Informations utilisateur Boutons connexion/déconnexion -->
-		<form id="formConnexion">
+		<form id="formConnexion" action="/index.php?page=connexion">
 		<ul id="connexion">
 			{if isset($smarty.session.username)}
 			<li>Utilisateur anonyme</li>
@@ -28,7 +28,8 @@
 			<li><input type="text" name="username" id="username"> </li>
 			<li><label for="password">Mot de Passe :</label></li>
 			<li><input type="password" name="password" id="password"> </li>
-			<li><button id="buttonConnexion">Connexion</button></li>
+			<li><button id="buttonConnexion" class= "buttonHeader">Connexion</button></li>
+			<li><a href="/index.php?page=inscription" id="buttonInscripton" class= "buttonHeader">Inscription</a></li>
 			{/if}
 		</ul>
 		</form>

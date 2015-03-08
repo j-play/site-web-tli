@@ -66,7 +66,7 @@ nav li {
 	display: inline;
 }
 
-#buttonConnexion {	
+.buttonHeader{
 	box-shadow: 0px 1px 0px 0px #1c1b18;	
 	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);	
 	background-color:#eae0c2;		
@@ -82,7 +82,6 @@ nav li {
 	text-decoration:none;	
 	text-shadow:0px 1px 0px #ffffff;
 }
-
 
 #buttonConnexion:hover {	
 	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);	
@@ -100,7 +99,23 @@ nav li {
 	display: inline;
 }
 
+#form_inscription{
+	display: table;
+	border-collapse:separate; 
+	border-spacing: 10px 10px;
+}
 
+div.form_col {
+	display: table-row; 
+	
+}
+label.form_col {
+	display: table-cell;
+}
+
+input.form_col{
+	display: table-cell;
+}
 #pathologies {
 	height: 100%;
 }
