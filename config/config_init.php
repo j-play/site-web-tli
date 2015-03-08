@@ -1,9 +1,11 @@
 <?php
 
-/**
-* Script d'initialisation de la configuration du site
-* @author Play-Boulay
-*/
+	/**
+	 * Script d'initialisation de la configuration du site
+	 *
+	 * @author Baptiste BOULAY & Jonathan PLAY
+	 */
+	 
 	// Initialisation de la session
 	session_start();
 	header("Cache-Control: no-cache");
