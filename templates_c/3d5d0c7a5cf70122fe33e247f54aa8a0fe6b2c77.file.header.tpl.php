@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-01 16:39:44
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-08 16:13:59
          compiled from "/Users/jonathanplay/Documents/CPE/4IRC/S8/TLI/site-web-tli/tpl/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:76188350254f332c0e1d277-36915323%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3d5d0c7a5cf70122fe33e247f54aa8a0fe6b2c77' => 
     array (
       0 => '/Users/jonathanplay/Documents/CPE/4IRC/S8/TLI/site-web-tli/tpl/header.tpl',
-      1 => 1424966792,
+      1 => 1425827634,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
   'unifunc' => 'content_54f332c13bdd62_92096465',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_54f332c13bdd62_92096465')) {function content_54f332c13bdd62_92096465($_smarty_tpl) {?><!DOCTYPE html>
 
@@ -42,7 +42,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<h1 id="titre">Acupuncture</h1>
     	
 		<!-- Informations utilisateur Boutons connexion/déconnexion -->
-		<form id="formConnexion">
+		<form id="formConnexion" action="/index.php?page=connexion" method="POST">
 		<ul id="connexion">
 			<?php if (isset($_SESSION['username'])) {?>
 			<li>Utilisateur anonyme</li>
@@ -51,7 +51,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			<li><input type="text" name="username" id="username"> </li>
 			<li><label for="password">Mot de Passe :</label></li>
 			<li><input type="password" name="password" id="password"> </li>
-			<li><button id="buttonConnexion">Connexion</button></li>
+			<li><button id="buttonConnexion" class= "buttonHeader">Connexion</button></li>
+			<li><a href="/index.php?page=inscription" id="buttonInscripton" class= "buttonHeader">Inscription</a></li>
 			<?php }?>
 		</ul>
 		</form>

@@ -5,10 +5,11 @@
  	* 
  	* @author Baptiste BOULAY & Jonathan PLAY
  	*/
+ 
 	try{
 		$username="";
 		if (isset($_POST['username'])){
-			$numeroRue = htmlentities($_POST['username'], ENT_QUOTES, 'UTF-8');
+			$username = htmlentities($_POST['username'], ENT_QUOTES, 'UTF-8');
 		}
         
 		$password="";
@@ -20,19 +21,33 @@
 		if(($username != "") && ($password != "")){
 			$stmt = $bdd->prepare("SELECT 'pseudo' from utilisateur where 'pseudo' = :username and 'mdp' = :password");
 			$stmt->bindParam(':username', $username);
-			$stmt->bindParam(':username', $pseudo);
+			$stmt->bindParam(':password', $password);
 			$stmt->execute();
 		
-			$result = $sth->fetch(PDO::FETCH_OBJ)
-
-			if(!isset($result->pseudo)){
+			/*$result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+    		foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
+        		echo $v;
+    		}*/
+		
+		
+			/*$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
+			
+			if(!isset($result["pseudo"])){
+				echo $result;
     			echo "empty";
 			}
 			else{
-    			$_SESSION[username] = $result->pseudo;
-			}
+				echo $result["pseudo"];
+    			$_SESSION["username"] = $result["pseudo"];
+			}*/
 		}
+		else{
+			echo 'Identifiants non-renseignés';
+		}
+	}
 	catch(PDOException $e)
     {
     	//echo "Error: " . $e->getMessage();
     }
+
+?>

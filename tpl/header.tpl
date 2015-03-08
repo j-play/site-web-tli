@@ -19,7 +19,7 @@
 		<h1 id="titre">Acupuncture</h1>
     	
 		<!-- Informations utilisateur Boutons connexion/déconnexion -->
-		<form id="formConnexion" action="/index.php?page=connexion">
+		<form id="formConnexion" action="/index.php?page=connexion" method="POST">
 		<ul id="connexion">
 			{if isset($smarty.session.username)}
 			<li>Utilisateur anonyme</li>
