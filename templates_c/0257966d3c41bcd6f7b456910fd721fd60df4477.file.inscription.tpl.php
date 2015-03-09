@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-08 15:06:14
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-08 16:08:07
          compiled from "/Users/Baptiste/github/site-web-tli/tpl/pages/inscription.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:45914901254fc54aed9e4a5-10875272%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '0257966d3c41bcd6f7b456910fd721fd60df4477' => 
     array (
       0 => '/Users/Baptiste/github/site-web-tli/tpl/pages/inscription.tpl',
-      1 => 1425823553,
+      1 => 1425826325,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_54fc54aedecae2_61261681')) {function content_54fc54aedecae2_61261681($_smarty_tpl) {?><main>
 	<section id="inscription">
 		<h2>Inscription</h2>
-		<form id="form_inscription"> 
+		<form id="form_inscription" action="/index.php?page=formInscription"> 
 			<div class="form_col">
 				<label class="form_col" for="input_pseudo">Pseudo : </label>
 				<input class="form_col" type="text" id="input_pseudo"/>
