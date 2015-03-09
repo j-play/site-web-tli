@@ -19,27 +19,18 @@
 	
 		// Si le pseudo et le mot de passe sont renseignés, on procède à la vérification en base
 		if(($username != "") && ($password != "")){
-			$stmt = $bdd->prepare("SELECT 'pseudo' from utilisateur where 'pseudo' = :username and 'mdp' = :password");
-			$stmt->bindParam(':username', $username);
-			$stmt->bindParam(':password', $password);
+			$stmt = $bdd->prepare("SELECT * FROM utilisateur WHERE pseudo = :username AND mdp = :password");
+			$stmt->bindValue(':username', $username);
+			$stmt->bindValue(':password', $password);
 			$stmt->execute();
-		
-			/*$result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-    		foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
-        		echo $v;
-    		}*/
-		
-		
-			/*$result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-			
-			if(!isset($result["pseudo"])){
-				echo $result;
-    			echo "empty";
+	
+			$result = $stmt->fetch(PDO::FETCH_ASSOC);
+			if(!isset($result["pseudo"])){;
+    			echo "Aucun utilisateur avec ce pseudo et ce mot de passe.";
 			}
 			else{
-				echo $result["pseudo"];
     			$_SESSION["username"] = $result["pseudo"];
-			}*/
+			}
 		}
 		else{
 			echo 'Identifiants non-renseignés';

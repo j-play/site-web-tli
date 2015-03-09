@@ -22,7 +22,8 @@
 		<form id="formConnexion" action="/index.php?page=connexion" method="POST">
 		<ul id="connexion">
 			{if isset($smarty.session.username)}
-			<li>Utilisateur anonyme</li>
+			<li>{$smarty.session.username}</li>
+			<li><a href="/index.php?page=deconnexion" id="buttonDeconnexion" class= "buttonHeader">Déconnexion</a></li>
 			{else}
 			<li><label for="username">Nom :</label></li>
 			<li><input type="text" name="username" id="username"> </li>

@@ -23,7 +23,7 @@
 
 	// Connexion Database
 	try {
-		$bdd = new PDO("mysql:host=localhost;dbname=projet_TLI", "root", "root");
+		$bdd = new PDO("mysql:host=localhost;dbname=Projet_TLI", "root", "root");
 		$bdd->query("SET NAMES UTF8");
 	} catch (Exception $e) {
     	echo "Problème de connexion à la base de donnée du site Acupuncture...";

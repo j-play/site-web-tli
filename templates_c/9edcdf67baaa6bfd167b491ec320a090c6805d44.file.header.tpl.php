@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-08 16:08:07
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-09 14:35:52
          compiled from "/Users/Baptiste/github/site-web-tli/tpl/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:134312774154ef1fdd23aed1-80736491%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9edcdf67baaa6bfd167b491ec320a090c6805d44' => 
     array (
       0 => '/Users/Baptiste/github/site-web-tli/tpl/header.tpl',
-      1 => 1425826360,
+      1 => 1425907998,
       2 => 'file',
     ),
   ),
@@ -42,10 +42,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<h1 id="titre">Acupuncture</h1>
     	
 		<!-- Informations utilisateur Boutons connexion/déconnexion -->
-		<form id="formConnexion" action="/index.php?page=connexion">
+		<form id="formConnexion" action="/index.php?page=connexion" method="POST">
 		<ul id="connexion">
 			<?php if (isset($_SESSION['username'])) {?>
-			<li>Utilisateur anonyme</li>
+			<li><?php echo $_SESSION['username'];?>
+</li>
+			<li><a href="/index.php?page=deconnexion" id="buttonDeconnexion" class= "buttonHeader">Déconnexion</a></li>
 			<?php } else { ?>
 			<li><label for="username">Nom :</label></li>
 			<li><input type="text" name="username" id="username"> </li>
