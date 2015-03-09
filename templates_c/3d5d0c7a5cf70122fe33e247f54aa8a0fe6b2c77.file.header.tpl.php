@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-08 16:13:59
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-09 17:16:12
          compiled from "/Users/jonathanplay/Documents/CPE/4IRC/S8/TLI/site-web-tli/tpl/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:76188350254f332c0e1d277-36915323%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3d5d0c7a5cf70122fe33e247f54aa8a0fe6b2c77' => 
     array (
       0 => '/Users/jonathanplay/Documents/CPE/4IRC/S8/TLI/site-web-tli/tpl/header.tpl',
-      1 => 1425827634,
+      1 => 1425914427,
       2 => 'file',
     ),
   ),
@@ -45,7 +45,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<form id="formConnexion" action="/index.php?page=connexion" method="POST">
 		<ul id="connexion">
 			<?php if (isset($_SESSION['username'])) {?>
-			<li>Utilisateur anonyme</li>
+			<li><?php echo $_SESSION['username'];?>
+</li>
+			<li><a href="/index.php?page=deconnexion" id="buttonDeconnexion" class= "buttonHeader">Déconnexion</a></li>
 			<?php } else { ?>
 			<li><label for="username">Nom :</label></li>
 			<li><input type="text" name="username" id="username"> </li>
