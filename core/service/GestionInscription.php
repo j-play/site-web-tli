@@ -1,59 +1,72 @@
 <?php
-class inscription {
-	private $_pseudo;
-	private $_password;
-	private $_email;
-	private $_resultat;
-	private $_erreurs;
 
-	public String getResultat() {
-    return resultat;
-	}
-
-	public Map<String, String> getErreurs() {
-    	return erreurs;
-	}
-	public function __construct($pseudo, $password, $email)
-	{
-		$this->setPseudo($pseudo);
-		$this->setPassword($password); 
-		$this->setPseudo($email);
-		if(($username != "") && ($password != "") && ($mail != "")){
-		
-			//on verifie que une autre utilisateur ne possède pas déja le même pseudo
-			$stmtTestUtilisateur = $bdd->prepare("SELECT pseudo FROM utilisateur WHERE pseudo = :username");
-			$stmtTestUtilisateur->bindValue(':username', $username);
-			$stmtTestUtilisateur->execute();
-			$resultTest = $stmtTestUtilisateur->fetch(PDO::FETCH_ASSOC);
-			if(!isset($resultTest["pseudo"])){;
-    			$stmtInsertionUtilisateur = $bdd->prepare("INSERT INTO utilisateur (pseudo, mdp, mail) VALUES (:username, :password, :email)");
-				$stmtInsertionUtilisateur->bindValue(':username', $username);
-				$stmtInsertionUtilisateur->bindValue(':password', $password);
-				$stmtInsertionUtilisateur->bindValue(':email', $mail);
-				$stmtInsertionUtilisateur->execute();
-				$_SESSION["username"] = $username;
-			}
-			else{
-    			echo "Un autre utilisateur a déja ce pseudo.";
+/**
+ * Classe service permettant d'inscrire un utlisateur
+ *
+ *@author Jonathan Play & Baptiste BOULAY 
+ */
+class GestionInscription {
+	
+	/**
+	*Créer un utilisateur si l'ensemble des paramètres sont corrects
+	*@param String $pseudo Pseudo de l'utilisateur
+	*@param String $password Mot de passe de l'utilisateur
+	*@param String $email email de l'utlisateur
+	*@return Utilisateur| NULL $utilisateur si l'inscription s'est bien déroulée, NULL si l'utilisateur ne correspond pas à tout les critères
+	*/
+	public static function inscriptionUtilisateur($pseudo, $password, $email){
+		$pseudo = validerPseudo($pseudo);
+		$password = validertPassword($password); 
+		$email = validerPseudo($email);
+		if(($pseudo != NULL) && ($password != NULL) && ($mail != NULL)){
+			$bdd = new Database();
+			$daoUtilisateur = new UtilisateurDAO($bdd);
+			if($daoUtilisateur->trouver($pseudo)){
+				$utilisateur = new Utilisateur($pseudo, $password, $email);
+				return $daoUtilisateur->creer($utlisateur);
 			}
 		}
+		return false;
 	}
 
-	public function setPseudo($pseudo)
+	/**
+	*Valider si le pseudo est correct (pseudo non vide  ...)
+	*@param String $pseudo Pseudo de l'utilisateur
+	*@return pseudo| NULL renvoie $pseudo sécurisé contre les injections sql renvoie NULL si le pseudo ne correspond pas aux critères
+	*/
+	private function validerPseudo($pseudo)
 	{
-		$this->_pseudo = htmlentities($pseudo, ENT_QUOTES, 'UTF-8');
+		if(($pseudo != ""){
+			return htmlentities($pseudo, ENT_QUOTES, 'UTF-8');
+		}
+		return NULL;
 	}
 	
-	public function setPassword($password)
+	/**
+	*Valider si le password est correct (password non vide  ...)
+	*@param String $password Password de l'utilisateur
+	*@return password| NULL renvoie $password sécurisé contre les injections sql renvoie NULL si le password ne correspond pas aux critères
+	*/
+	private function validerPassword($password)
 	{
-		$this->_password = htmlentities($password, ENT_QUOTES, 'UTF-8');
+		if(($password != ""){
+			return htmlentities($password, ENT_QUOTES, 'UTF-8');
+		}
+		return NULL;
 	}
 	
-	public function setPseudo($email)
+	/**
+	*Valider si le email est correct (email non vide  ...)
+	*@param String $email Email de l'utilisateur
+	*@return email| NULL renvoie $email sécurisé contre les injections sql renvoie NULL si le email ne correspond pas aux critères
+	*/
+	private function validerPseudo($email)
 	{
-		$this->_email = htmlentities($email, ENT_QUOTES, 'UTF-8');
+		if(($email != ""){
+			return htmlentities($email, ENT_QUOTES, 'UTF-8');
+		}
+		return NULL;
 	}
-		
 }
 	
 ?>

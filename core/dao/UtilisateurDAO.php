@@ -1,59 +1,59 @@
 <?php
-class inscription {
+class UtilisateurDAO {
 	private $_pseudo;
 	private $_password;
 	private $_email;
-	private $_resultat;
-	private $_erreurs;
+	private $_bdd;
 
-	public String getResultat() {
-    return resultat;
+	function __construct($bdd){
+		$this->_bdd = $bdd;
 	}
-
-	public Map<String, String> getErreurs() {
-    	return erreurs;
-	}
-	public function __construct($pseudo, $password, $email)
-	{
-		$this->setPseudo($pseudo);
-		$this->setPassword($password); 
-		$this->setPseudo($email);
-		if(($username != "") && ($password != "") && ($mail != "")){
+	function creer($utlisateur){
+		try{
+			$stmtInsertionUtilisateur = $this->_bdd->prepare("INSERT INTO utilisateur (pseudo, mdp, mail) VALUES (:pseudo, :password, :email)");
+			$stmtInsertionUtilisateur->bindValue(':pseudo', $utlisateur->getPseudo());
+			$stmtInsertionUtilisateur->bindValue(':password', $utlisateur->getPassword());
+			$stmtInsertionUtilisateur->bindValue(':email', $utlisateur->getEmail());
+			return $stmtInsertionUtilisateur->execute();
+			}
+		catch(PDOException $e){
+			throw($e);
+		}
 		
-			//on verifie que une autre utilisateur ne possède pas déja le même pseudo
-			$stmtTestUtilisateur = $bdd->prepare("SELECT pseudo FROM utilisateur WHERE pseudo = :username");
-			$stmtTestUtilisateur->bindValue(':username', $username);
-			$stmtTestUtilisateur->execute();
-			$resultTest = $stmtTestUtilisateur->fetch(PDO::FETCH_ASSOC);
-			if(!isset($resultTest["pseudo"])){;
-    			$stmtInsertionUtilisateur = $bdd->prepare("INSERT INTO utilisateur (pseudo, mdp, mail) VALUES (:username, :password, :email)");
-				$stmtInsertionUtilisateur->bindValue(':username', $username);
-				$stmtInsertionUtilisateur->bindValue(':password', $password);
-				$stmtInsertionUtilisateur->bindValue(':email', $mail);
-				$stmtInsertionUtilisateur->execute();
-				$_SESSION["username"] = $username;
+	}
+	
+	function trouver($pseudo){
+		try{
+			$stmtTrouverUtilisateur = $this->_bdd->prepare("SELECT pseudo FROM utilisateur WHERE pseudo = :pseudo");
+			$stmtTrouverUtilisateur->bindValue(':pseudo', $pseudo);
+			$stmtTrouverUtilisateur->execute();
+			$result = $stmtTrouverUtilisateur->fetch(PDO::FETCH_ASSOC);
+			if(isset($resultTest["pseudo"])){
+				return true;
 			}
-			else{
-    			echo "Un autre utilisateur a déja ce pseudo.";
-			}
+			return false;
+		}
+		catch(PDOException $e){
+			throw($e);
 		}
 	}
-
-	public function setPseudo($pseudo)
-	{
-		$this->_pseudo = htmlentities($pseudo, ENT_QUOTES, 'UTF-8');
-	}
 	
-	public function setPassword($password)
-	{
-		$this->_password = htmlentities($password, ENT_QUOTES, 'UTF-8');
+	function recuperer($pseudo, $password){
+		try{
+			$stmtPseudoPassword = $this->_bdd->prepare("SELECT * FROM utilisateur WHERE pseudo = :pseudo AND mdp = :password");
+			$stmtPseudoPassword ->bindValue(':pseudo', $pseudo);
+			$stmtPseudoPassword ->bindValue(':password', $password);
+			$stmtPseudoPassword ->execute();
+			$result = $stmtPseudoPassword ->fetch(PDO::FETCH_ASSOC);
+			if(isset($result["pseudo"])){;
+    			return new Utilisateur($result["pseudo"], NULL,$result["email"]); // on retourne un utilisateur avec un mot de passe à NULL
+			}
+			return NULL;
+		}
+		catch(PDOException $e){
+			throw($e);
+		}
 	}
-	
-	public function setPseudo($email)
-	{
-		$this->_email = htmlentities($email, ENT_QUOTES, 'UTF-8');
-	}
-		
 }
 	
 ?>
