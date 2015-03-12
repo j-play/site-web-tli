@@ -1,59 +1,38 @@
 <?php
-class inscription {
-	private $_pseudo;
-	private $_password;
-	private $_email;
-	private $_resultat;
-	private $_erreurs;
 
-	public String getResultat() {
-    return resultat;
-	}
+	require_once("./beans/Utilisateur.php");
+	require_once("./dao/UtilisateurDAO.php");
+	require_once("./util/Datebase.php");
 
-	public Map<String, String> getErreurs() {
-    	return erreurs;
-	}
-	public function __construct($pseudo, $password, $email)
-	{
-		$this->setPseudo($pseudo);
-		$this->setPassword($password); 
-		$this->setPseudo($email);
-		if(($username != "") && ($password != "") && ($mail != "")){
+	/**
+	 * Classe utilitaire permettant la gestion de l'athentification d'un utilisateur
+	 * 
+	 * @author Jonathan PLAY & Baptiste BOULAY
+	 */
+	class GestionAuthentification{
 		
-			//on verifie que une autre utilisateur ne possède pas déja le même pseudo
-			$stmtTestUtilisateur = $bdd->prepare("SELECT pseudo FROM utilisateur WHERE pseudo = :username");
-			$stmtTestUtilisateur->bindValue(':username', $username);
-			$stmtTestUtilisateur->execute();
-			$resultTest = $stmtTestUtilisateur->fetch(PDO::FETCH_ASSOC);
-			if(!isset($resultTest["pseudo"])){;
-    			$stmtInsertionUtilisateur = $bdd->prepare("INSERT INTO utilisateur (pseudo, mdp, mail) VALUES (:username, :password, :email)");
-				$stmtInsertionUtilisateur->bindValue(':username', $username);
-				$stmtInsertionUtilisateur->bindValue(':password', $password);
-				$stmtInsertionUtilisateur->bindValue(':email', $mail);
-				$stmtInsertionUtilisateur->execute();
-				$_SESSION["username"] = $username;
+	   /**
+	 	* Vérifie la validité des identifiants
+	 	* @param String $pseudo Pseudo de l'utilisateur
+	 	* @param String $password Mot de passe de l'utilisateur
+	 	* @return Utilisateur|NULL $utilisateur Renvoie un objet Utilisateur et ses informations si les identifiants 
+	 	* sont valides, NULL sinon 
+	 	*/
+		public static authentUtilisateur($pseudo, $password){
+			try{
+				$bdd = new Database();
+				$daoUtilisateur = new UtilisateurDAO($bdd);
+				$utilisateur = NULL;
+				$utilisateur = daoUtilisateur->recuperer($pseudo, $password);
+
+				return $utilisateur;
 			}
-			else{
-    			echo "Un autre utilisateur a déja ce pseudo.";
+			catch(Exception $e){
+				throw($e);
 			}
 		}
-	}
 
-	public function setPseudo($pseudo)
-	{
-		$this->_pseudo = htmlentities($pseudo, ENT_QUOTES, 'UTF-8');
+			
 	}
-	
-	public function setPassword($password)
-	{
-		$this->_password = htmlentities($password, ENT_QUOTES, 'UTF-8');
-	}
-	
-	public function setPseudo($email)
-	{
-		$this->_email = htmlentities($email, ENT_QUOTES, 'UTF-8');
-	}
-		
-}
 	
 ?>

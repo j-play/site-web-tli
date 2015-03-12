@@ -21,8 +21,8 @@
 		<!-- Informations utilisateur Boutons connexion/déconnexion -->
 		<form id="formConnexion" action="/index.php?page=connexion" method="POST">
 		<ul id="connexion">
-			{if isset($smarty.session.username)}
-			<li>{$smarty.session.username}</li>
+			{if isset($smarty.session.pseudo)}
+			<li>{$smarty.session.pseudo}</li>
 			<li><a href="/index.php?page=deconnexion" id="buttonDeconnexion" class= "buttonHeader">Déconnexion</a></li>
 			{else}
 			<li><label for="username">Nom :</label></li>
