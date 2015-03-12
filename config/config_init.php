@@ -35,7 +35,3 @@
 	$smarty = new Smarty();
  
 ?>
-
-getPatho(filtre1, filtre2, filtre3){
-	
-}

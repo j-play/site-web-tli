@@ -1,4 +1,25 @@
-<!DOCTYPE html>
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-12 17:26:28
+         compiled from "/Users/jonathanplay/Documents/CPE/4IRC/S8/TLI/site-web-tli/tpl/header.tpl" */ ?>
+<?php /*%%SmartyHeaderCode:7093592705501bb8c8c34e9-58110020%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '3d5d0c7a5cf70122fe33e247f54aa8a0fe6b2c77' => 
+    array (
+      0 => '/Users/jonathanplay/Documents/CPE/4IRC/S8/TLI/site-web-tli/tpl/header.tpl',
+      1 => 1426177523,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '7093592705501bb8c8c34e9-58110020',
+  'function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_5501bb8ccdf618_93011041',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_5501bb8ccdf618_93011041')) {function content_5501bb8ccdf618_93011041($_smarty_tpl) {?><!DOCTYPE html>
 
 <html lang="FR">
 <head>
@@ -9,7 +30,9 @@
     <!-- Main CSS -->
     <link href="/web/css/main.css" media="screen" rel="stylesheet">
     <!-- Main JavaScript -->
-    <script src="/web/js/main.js"></script>
+    <?php echo '<script'; ?>
+ src="/web/js/main.js"><?php echo '</script'; ?>
+>
 </head>
 
 <body>
@@ -21,17 +44,18 @@
 		<!-- Informations utilisateur Boutons connexion/déconnexion -->
 		<form id="formConnexion" action="/index.php?page=authentification" method="POST">
 		<ul id="connexion">
-			{if isset($smarty.session.pseudo)}
-			<li>{$smarty.session.pseudo}</li>
+			<?php if (isset($_SESSION['pseudo'])) {?>
+			<li><?php echo $_SESSION['pseudo'];?>
+</li>
 			<li><a href="/index.php?page=deconnexion" id="buttonDeconnexion" class= "buttonHeader">Déconnexion</a></li>
-			{else}
+			<?php } else { ?>
 			<li><label for="pseudo">Nom :</label></li>
 			<li><input type="text" name="pseudo" id="pseudo"> </li>
 			<li><label for="password">Mot de Passe :</label></li>
 			<li><input type="password" name="password" id="password"> </li>
 			<li><button id="buttonConnexion" class= "buttonHeader">Connexion</button></li>
 			<li><a href="/index.php?page=inscription" id="buttonInscripton" class= "buttonHeader">Inscription</a></li>
-			{/if}
+			<?php }?>
 		</ul>
 		</form>
     	<!-- Menu de navigation -->
@@ -41,4 +65,4 @@
                 	<li><a href="/index.php?page=patho">PATHOLOGIES</a></li>
 				</ul>
         </nav>
-    </header>
+    </header><?php }} ?>
