@@ -1,7 +1,7 @@
 <main>
 	<section id="inscription">
 		<h2>Inscription</h2>
-		<form id="form_inscription" action="/index.php?page=formInscription" method="POST"> 
+		<form id="form_inscription" action="/index.php?page=inscription" method="POST"> 
 			<div class="form_col">
 				<label class="form_col" for="input_pseudo">Pseudo : </label>
 				<input class="form_col" type="text" id="input_pseudo" name="input_pseudo"/>

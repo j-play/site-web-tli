@@ -1,5 +1,8 @@
 <?php
 
+require_once("./beans/Utilisateur.php");
+require_once("./dao/UtilisateurDAO.php");
+require_once("./util/Datebase.php");
 /**
  * Classe service permettant d'inscrire un utlisateur
  *
