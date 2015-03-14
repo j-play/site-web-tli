@@ -5,4 +5,5 @@
 	    const PASSWORD = 'root';
 	    const DATABASE = 'Projet_TLI';
 	    const DRIVER = 'mysql';
+	}
 ?>

@@ -1,7 +1,7 @@
 <?php
 
 	require_once(_CORE_.'beans/Utilisateur.php');
-	require_once("./core/service/GestionAuthentification.php");
+	require_once(_CORE_.'service/GestionAuthentification.php');
 
    /**
 	* Contrôlleur de gestion des demandes de connexion
@@ -21,14 +21,12 @@
 			$pseudo = htmlentities($_POST['pseudo'], ENT_QUOTES, 'UTF-8');
 			$password = htmlentities($_POST['password'], ENT_QUOTES, 'UTF-8');
 
-			echo 'ids récupérés!';
 			// On vérifie la validité des identifiants et on récupère les informations sur l'utilisateur
 			$utilisateur = GestionAuthentification::authentUtilisateur($pseudo, $password);
 
 			if($utilisateur != NULL){
-				$_SESSION["pseudo"] = utilisateur->getPseudo();
-				$_SESSION["mail"] = utilisateur->getMail();
-				echo 'identifiants OK, session initialisée';
+				$_SESSION["pseudo"] = $utilisateur->getPseudo();
+				$_SESSION["mail"] = $utilisateur->getEmail();
 			}
 			else{
 				echo 'isset marche pas ...';

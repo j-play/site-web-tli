@@ -8,7 +8,7 @@ class Utilisateur {
 	{
 		$this->setPseudo($pseudo);
 		$this->setPassword($password); 
-		$this->setPseudo($email);
+		$this->setEmail($email);
 	}
 
 	public function setPseudo($pseudo)
@@ -21,7 +21,7 @@ class Utilisateur {
 		$this->_password = htmlentities($password, ENT_QUOTES, 'UTF-8');
 	}
 	
-	public function setPseudo($email)
+	public function setEmail($email)
 	{
 		$this->_email = htmlentities($email, ENT_QUOTES, 'UTF-8');
 	}
@@ -36,7 +36,7 @@ class Utilisateur {
 		return $this->_password;
 	}
 	
-	public function getPseudo()
+	public function getEmail()
 	{
 		return $this->_email;
 	}

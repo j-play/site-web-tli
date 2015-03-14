@@ -1,5 +1,5 @@
 <?php 
-
+	require_once(_CORE_.'service/GestionInscription.php');
    /**
 	* Contrôlleur de gestion des inscriptions
  	* 
@@ -19,14 +19,14 @@
 		
 		$email="";
     	if (isset($_POST['input_mail'])){
-    		$mail = htmlentities($_POST['input_mail'], ENT_QUOTES, 'UTF-8');
+    		$email = htmlentities($_POST['input_mail'], ENT_QUOTES, 'UTF-8');
     		// TODO rajouter une regex pour tester la validité
 		}       
 	
 		// Si le pseudo, le mot de passe  et le mail sont renseignés
 		if(($pseudo != "") && ($password != "") && ($email != "")){
 		
-			if(GestionInscription::inscriptionUtilisateur($pseudo, $password, $email)
+			if(GestionInscription::inscriptionUtilisateur($pseudo, $password, $email)){
 				$_SESSION["pseudo"] = $pseudo;
 			}
 			else{

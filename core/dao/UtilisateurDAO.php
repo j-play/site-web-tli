@@ -28,7 +28,7 @@ class UtilisateurDAO {
 			$stmtTrouverUtilisateur->bindValue(':pseudo', $pseudo);
 			$stmtTrouverUtilisateur->execute();
 			$result = $stmtTrouverUtilisateur->fetch(PDO::FETCH_ASSOC);
-			if(isset($resultTest["pseudo"])){
+			if(isset($result["pseudo"])){
 				return true;
 			}
 			return false;
@@ -46,7 +46,7 @@ class UtilisateurDAO {
 			$stmtPseudoPassword ->execute();
 			$result = $stmtPseudoPassword ->fetch(PDO::FETCH_ASSOC);
 			if(isset($result["pseudo"])){;
-    			return new Utilisateur($result["pseudo"], NULL,$result["email"]); // on retourne un utilisateur avec un mot de passe à NULL
+    			return new Utilisateur($result["pseudo"], NULL,$result["mail"]); // on retourne un utilisateur avec un mot de passe à NULL
 			}
 			return NULL;
 		}
