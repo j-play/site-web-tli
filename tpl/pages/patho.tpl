@@ -22,15 +22,12 @@
 				
 			<label for="filtre-mot-cle">Mot clé : </label>
 			<input id="filtre-mot-cle" type="text"/>
-			<br/>
 			<input id="valid-filtres" type="submit" name="Valider"/>
 		</form>
 			
 		<div id="corps-patho">
 			<div id="liste-fiches">
-				Listes pathologies :
-				<br/>
-                
+				<h3>Listes pathologies :</h3>
                 <ul>
                 {section name=listePatho loop=$listePatho}
                 {assign var=patho value=$listePatho[listePatho]}
@@ -38,7 +35,6 @@
                       <span><a href="">{$patho->_desc}</a></span>
                   </li>
                 {/section}
-                
 			</div>
 			<!-- Fiche de la pathologie affichée -->
 			<div id="fiche-patho-select">

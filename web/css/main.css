@@ -14,8 +14,8 @@ header{
 	color: white;
 }
 main {
-	display: block;
-	height: 70%;
+	/*display: block;
+	height: 70%;*/
 	padding-left: 2%;
 }
 
@@ -130,17 +130,39 @@ input.form_col{
 	display: block;
 	margin-bottom: 1%;
 }
+
+#filtres select{
+    margin-right: 1%;
+    margin-left: 1%;
+    font-size: 14px;
+}
+
+#valid-filtres{
+    margin-left: 1%;  
+    font-size: 14px;
+}
+
 #liste-fiches{
-	width: 20%;
-	height: 100%;
+	width: 22%;
+	height: 50%;
 	display: inline-block;
 	border-right-color: black;
 	border-right-style: solid;
 	border-right-width: medium;
 }
 
+#liste-fiches ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+}
+
+#liste-fiches ul li {
+    list-style: outside none none;
+}
+
 #fiche-patho-select{
-	width: 74%;
+	width: 72%;
 	display: inline-block;
 }
 

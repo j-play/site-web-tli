@@ -5,7 +5,8 @@
 	        parent::__construct(
 	            DatabaseConfiguration::DRIVER.':host='.DatabaseConfiguration::SERVER.';dbname='.DatabaseConfiguration::DATABASE,
 	            DatabaseConfiguration::LOGIN,
-	            DatabaseConfiguration::PASSWORD
+	            DatabaseConfiguration::PASSWORD,
+                array( PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8")
 	        );
 	    }
 	}

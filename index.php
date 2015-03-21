@@ -11,7 +11,6 @@
     	include_once(_CTRL_.$_GET['page'].'.php');	
     }
 	else {
-        echo 'inclusion controleur index.php';
     	include_once(_CTRL_.'index.php');
     }
     

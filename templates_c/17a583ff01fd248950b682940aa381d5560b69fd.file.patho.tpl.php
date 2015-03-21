@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-21 18:03:12
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-22 00:33:57
          compiled from "/Users/jonathanplay/Documents/CPE/4IRC/S8/TLI/site-web-tli/tpl/pages/patho.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:421897963550d837f3a27e4-78699106%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '17a583ff01fd248950b682940aa381d5560b69fd' => 
     array (
       0 => '/Users/jonathanplay/Documents/CPE/4IRC/S8/TLI/site-web-tli/tpl/pages/patho.tpl',
-      1 => 1426957392,
+      1 => 1426980836,
       2 => 'file',
     ),
   ),
@@ -48,15 +48,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				
 			<label for="filtre-mot-cle">Mot clé : </label>
 			<input id="filtre-mot-cle" type="text"/>
-			<br/>
 			<input id="valid-filtres" type="submit" name="Valider"/>
 		</form>
 			
 		<div id="corps-patho">
 			<div id="liste-fiches">
-				Listes pathologies :
-				<br/>
-                
+				<h3>Listes pathologies :</h3>
                 <ul>
                 <?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['listePatho'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['listePatho']);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['listePatho']['name'] = 'listePatho';
@@ -88,7 +85,6 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['listePatho']['last']       =
 </a></span>
                   </li>
                 <?php endfor; endif; ?>
-                
 			</div>
 			<!-- Fiche de la pathologie affichée -->
 			<div id="fiche-patho-select">
