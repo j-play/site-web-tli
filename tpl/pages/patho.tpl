@@ -30,10 +30,15 @@
 			<div id="liste-fiches">
 				Listes pathologies :
 				<br/>
-				<ul>
-					<li>Fiche 1</li>
-					<li>Fiche 2</li>
-				</ul>
+                
+                <ul>
+                {section name=listePatho loop=$listePatho}
+                {assign var=patho value=$listePatho[listePatho]}
+                  <li>
+                      <span><a href="">{$patho->_desc}</a></span>
+                  </li>
+                {/section}
+                
 			</div>
 			<!-- Fiche de la pathologie affichée -->
 			<div id="fiche-patho-select">

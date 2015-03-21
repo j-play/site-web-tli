@@ -1,8 +1,5 @@
 <?php
 class UtilisateurDAO {
-	private $_pseudo;
-	private $_password;
-	private $_email;
 	private $_bdd;
 
 	function __construct($bdd){
