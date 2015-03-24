@@ -41,6 +41,20 @@ class GestionPathologie {
         return $daoMeridien->recupererListe();
     }
     
+    /**
+	* Récupère la pathologie
+    * @param idPathologie id de la pathologie
+	* @return Pathologie la pathologie
+	*/
+    public static function recupererPathologie($idPathologie){
+        
+        $bdd = new Database();
+        $daoPathologie = new PathologieDAO($bdd);
+
+        //Renvoie la pathologie	    
+        return $daoPathologie->recupererPatho($idPathologie);
+    }
+    
     
     
 }

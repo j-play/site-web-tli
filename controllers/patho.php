@@ -7,9 +7,12 @@
         echo 'POST!!';    
     }
     else{
-        // Si on charge initialement la page des pathologies
-        $smarty->assign('listePatho', GestionPathologie::recupererListePathologies());
         $smarty->assign('listeMeridiens', GestionPathologie::recupererListeMeridiens());
+        $smarty->assign('listePatho', GestionPathologie::recupererListePathologies());
+        if(isset($_GET['idPatho']) && !empty($_GET['idPatho'])){
+            $idPatho =$_GET['idPatho'];
+            $smarty->assign('pathologie', GestionPathologie::recupererPathologie($idPatho));
+        }
     }
     
 ?>

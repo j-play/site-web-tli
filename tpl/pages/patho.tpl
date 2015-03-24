@@ -13,7 +13,7 @@
 			</select>
 				
 			<label for="filtre-meridien">Méridiens : </label>
-			<select id="filtre-meridien" name="filtre-tpatho">
+			<select id="filtre-meridien" name="filtre-meridien">
                 <option value="null">Aucun</option>
                 {section name=itemMeridien loop=$listeMeridiens}
                 {assign var=meridien value=$listeMeridiens[itemMeridien]}
@@ -24,7 +24,7 @@
 			</select>
 				
 			<label for="filtre-carac">Caractéristiques : </label>
-			<select id="filtre-carac" name="filtre-tpatho">
+			<select id="filtre-carac" name="filtre-carac">
                 <option value="null">Aucun</option>
 				<option value ="p">Plein</option>
                 <option value ="c">Chaud</option>
@@ -46,14 +46,24 @@
                 {section name=itemPatho loop=$listePatho}
                 {assign var=patho value=$listePatho[itemPatho]}
                   <li id="{$patho->_id}">
-                      <span>{$patho->_desc}</span>
+                      <a href="/index.php?page=patho&idPatho={$patho->_id}">{$patho->_desc}</a>
                   </li>
                 {/section}
                 </ul>
 			</div>
 			<!-- Fiche de la pathologie affichée -->
 			<div id="fiche-patho-select">
-				<h2>Titre la fiche</h2>
+				<h2>{$pathologie->_desc}</h2>
+                <p>Méridien: {$patho->_meridien}</p>
+                <ul>
+                {section name=itemSymptome loop=$patho->_listeSymptomes}
+                {assign var=symptome value=$patho->_listeSymptomes[itemSymptome]}
+                  <li>
+                      {$symptome->_desc}
+                  </li>
+                {/section}
+                
+                
 			</div>
 		</div>
 	</section>
