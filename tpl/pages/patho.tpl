@@ -31,8 +31,8 @@
                 <ul>
                 {section name=listePatho loop=$listePatho}
                 {assign var=patho value=$listePatho[listePatho]}
-                  <li>
-                      <span><a href="">{$patho->_desc}</a></span>
+                  <li id="{$patho->_id}">
+                      <span>{$patho->_desc}</span>
                   </li>
                 {/section}
 			</div>

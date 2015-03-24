@@ -1,0 +1,14 @@
+IMPORTANT : 
+-> Afficher les détails d'une pathologie dans la partie descriptive
+-> Faire fichier XML d'une pathologie (TP10)
+-> Faire flux RSS avec fichier XML
+
+MOINS IMPORTANT :
+-> Améliorer affichage de la liste des pathologie
+-> Faire en sorte de voir qu'on puisse cliquer sur une pathologie pour en afficher les détails
+-> Afficher correctement la partie description de pathologie pour qu'elle ne soit pas en bas à gauche 
+-> Ajouter des fonds de couleur pour les différents parties (notamment la partie liste des pathologies)
+-> Afficher la liste des pathologies par catégories dans la liste, ou au moins dans l'ordre alphabétique ?
+
+✓
+✓
