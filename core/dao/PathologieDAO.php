@@ -19,7 +19,7 @@ class PathologieDAO {
      * Retourne la liste des pathologies existantes
      * @return Pathologie[] $listePatho liste des pathologies existantes
      */
-    public function recupererListeAll(){
+    public function recupererListe(){
         try{
 			$stmt = $this->_bdd->prepare("SELECT * FROM patho");
 			$stmt ->execute();
@@ -28,7 +28,16 @@ class PathologieDAO {
             $listePatho = array();
             
             foreach($result as $r) {
-                $patho = new Pathologie($r['idP'], $r['desc']);
+                $stmtSymptome = $this->_bdd->prepare("SELECT * FROM symptome JOIN symptPatho ON symptome.idS = symptPatho.idS WHERE symptPatho.idP = :idPatho ");
+                $stmtSymptome->bindValue(':idPatho', $r['idP']);
+                $stmtSymptome->execute();
+                $resultSymptome = $stmtSymptome->fetchAll();
+                $listeSymptome = array();
+                foreach($resultSymptome as $row) {
+                    $symptome = new Symptome($row['idS'], $row['desc']);
+                    array_push($listeSymptome, $symptome);
+                }
+                $patho = new Pathologie($r['idP'], $r['desc'], $r['type'],$r['mer'],$listeSymptome);
                 array_push($listePatho, $patho);
             }
             

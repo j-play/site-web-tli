@@ -1,28 +1,21 @@
 <?php
 
 /**
- * Objet contenant les informations sur une pathologie
+ * Objet contenant les informations sur un symptome
  *
  * @author BOULAY Baptiste & Jonathan PLAY
  */
-class Pathologie {
+class Symptome {
     
     // Attributs
     private $_id;
-    private $_type;
 	private $_desc;
-    private $_meridien;
-    private $_listeSymptomes;
 
     // Constructeur
-	public function __construct($id, $desc, $type, $meridien, $listeSymptomes)
+	public function __construct($id, $desc)
 	{
 		$this->_id = $id;
-		$this->_desc = $desc; 
-        $this->_type = $type;
-        $this->_meridien = $meridien;
-        $this->_listeSymptomes = $listeSymptomes;
-        
+		$this->_desc = $desc;     
     }
     
     

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-24 10:52:01
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-24 11:03:12
          compiled from "/Users/Baptiste/github/site-web-tli/tpl/pages/patho.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:934913891550e8e3bbe97c9-17747377%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4dd95cd324958115e54b829a718485ec57877e9f' => 
     array (
       0 => '/Users/Baptiste/github/site-web-tli/tpl/pages/patho.tpl',
-      1 => 1427190719,
+      1 => 1427191351,
       2 => 'file',
     ),
   ),
@@ -53,7 +53,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 			
 		<div id="corps-patho">
 			<div id="liste-fiches">
-				<div id="liste-fiches-column">
 				<h3>Listes pathologies :</h3>
                 <ul>
                 <?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['listePatho'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['listePatho']);
@@ -81,18 +80,17 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['listePatho']['first']      =
 $_smarty_tpl->tpl_vars['smarty']->value['section']['listePatho']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['listePatho']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['listePatho']['total']);
 ?>
                 <?php $_smarty_tpl->tpl_vars['patho'] = new Smarty_variable($_smarty_tpl->tpl_vars['listePatho']->value[$_smarty_tpl->getVariable('smarty')->value['section']['listePatho']['index']], null, 0);?>
-                  <li>
-                      <span><a href=""><?php echo $_smarty_tpl->tpl_vars['patho']->value->_desc;?>
-</a></span>
+                  <li id="<?php echo $_smarty_tpl->tpl_vars['patho']->value->_id;?>
+">
+                      <span><?php echo $_smarty_tpl->tpl_vars['patho']->value->_desc;?>
+</span>
                   </li>
                 <?php endfor; endif; ?>
                 </ul>
-                </div>
 			</div>
 			<!-- Fiche de la pathologie affichée -->
 			<div id="fiche-patho-select">
 				<h2>Titre la fiche</h2>
-                <div><p>test</p></div>
 			</div>
 		</div>
 	</section>
