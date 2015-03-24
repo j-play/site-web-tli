@@ -1,6 +1,6 @@
 <main>
 	<section id="pathologies">
-		<h2>Pathologies</h2>
+		<h2 id="titrePatho">Pathologies</h2>
 		<form id="filtres"> 
 			<label for="filtre-tpatho">Type de pathologie : </label>
 			<select id="filtre-tpatho">
@@ -35,6 +35,7 @@
                       <span>{$patho->_desc}</span>
                   </li>
                 {/section}
+                </ul>
 			</div>
 			<!-- Fiche de la pathologie affichée -->
 			<div id="fiche-patho-select">
