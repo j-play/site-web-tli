@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-24 16:11:59
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-24 16:36:10
          compiled from "/Users/Baptiste/github/site-web-tli/tpl/pages/patho.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:934913891550e8e3bbe97c9-17747377%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4dd95cd324958115e54b829a718485ec57877e9f' => 
     array (
       0 => '/Users/Baptiste/github/site-web-tli/tpl/pages/patho.tpl',
-      1 => 1427209915,
+      1 => 1427211365,
       2 => 'file',
     ),
   ),
@@ -124,7 +124,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['itemPatho']['last']       = 
                 <?php $_smarty_tpl->tpl_vars['patho'] = new Smarty_variable($_smarty_tpl->tpl_vars['listePatho']->value[$_smarty_tpl->getVariable('smarty')->value['section']['itemPatho']['index']], null, 0);?>
                   <li id="<?php echo $_smarty_tpl->tpl_vars['patho']->value->_id;?>
 ">
-                      <a href="/index.php?page=patho&idPatho=<?php echo $_smarty_tpl->tpl_vars['patho']->value->_id;?>
+                      <a href="/index.php?page=patho&amp;idPatho=<?php echo $_smarty_tpl->tpl_vars['patho']->value->_id;?>
 "><?php echo $_smarty_tpl->tpl_vars['patho']->value->_desc;?>
 </a>
                   </li>
@@ -136,7 +136,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['itemPatho']['last']       = 
                 <?php if (isset($_smarty_tpl->tpl_vars['pathologie']->value)) {?>
 				<h2><?php echo $_smarty_tpl->tpl_vars['pathologie']->value->_desc;?>
 </h2>
-                <p>Méridien: <?php echo $_smarty_tpl->tpl_vars['pathologie']->value->_meridien;?>
+                <p>Méridien: <?php echo $_smarty_tpl->tpl_vars['pathologie']->value->_meridien->_nom;?>
 </p>
                 <h3>Liste des symptômes:</h3>
                 <ul>

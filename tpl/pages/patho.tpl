@@ -46,7 +46,7 @@
                 {section name=itemPatho loop=$listePatho}
                 {assign var=patho value=$listePatho[itemPatho]}
                   <li id="{$patho->_id}">
-                      <a href="/index.php?page=patho&idPatho={$patho->_id}">{$patho->_desc}</a>
+                      <a href="/index.php?page=patho&amp;idPatho={$patho->_id}">{$patho->_desc}</a>
                   </li>
                 {/section}
                 </ul>
@@ -55,7 +55,7 @@
 			<div id="fiche-patho-select">
                 {if isset($pathologie)}
 				<h2>{$pathologie->_desc}</h2>
-                <p>Méridien: {$pathologie->_meridien}</p>
+                <p>Méridien: {$pathologie->_meridien->_nom}</p>
                 <h3>Liste des symptômes:</h3>
                 <ul>
                 {section name=itemSymptome loop=$pathologie->_listeSymptomes}
