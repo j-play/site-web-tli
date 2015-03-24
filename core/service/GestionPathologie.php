@@ -21,9 +21,7 @@ class GestionPathologie {
         $bdd = new Database();
         $daoPathologie = new PathologieDAO($bdd);
 
-        //Renvoie de la liste de toutes les pathologies trouvées	
-        $liste = $daoPathologie->recupererListeAll();
-        
+        //Renvoie de la liste de toutes les pathologies trouvées	    
         return $daoPathologie->recupererListeAll();
     }
     

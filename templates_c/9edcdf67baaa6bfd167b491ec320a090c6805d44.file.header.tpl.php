@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-14 10:15:38
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-24 10:42:41
          compiled from "/Users/Baptiste/github/site-web-tli/tpl/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3020546455503fab7360465-80211860%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9edcdf67baaa6bfd167b491ec320a090c6805d44' => 
     array (
       0 => '/Users/Baptiste/github/site-web-tli/tpl/header.tpl',
-      1 => 1426324532,
+      1 => 1427190006,
       2 => 'file',
     ),
   ),
@@ -60,7 +60,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</form>
     	<!-- Menu de navigation -->
         <nav id="menu">
-            	<ul class="nav navbar-nav">
+            	<ul class="nav">
                 	<li><a href="/index.php?page=index" >ACCUEIL</a></li>
                 	<li><a href="/index.php?page=patho">PATHOLOGIES</a></li>
 				</ul>

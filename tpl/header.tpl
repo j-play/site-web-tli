@@ -36,7 +36,7 @@
 		</form>
     	<!-- Menu de navigation -->
         <nav id="menu">
-            	<ul class="nav navbar-nav">
+            	<ul class="nav">
                 	<li><a href="/index.php?page=index" >ACCUEIL</a></li>
                 	<li><a href="/index.php?page=patho">PATHOLOGIES</a></li>
 				</ul>
