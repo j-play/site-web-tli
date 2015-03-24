@@ -10,8 +10,12 @@
 				
 			<label for="filtre-meridien">Méridiens : </label>
 			<select id="filtre-meridien">
-				<option>Méridien 1</option>
-				<option>Méridien 2</option>
+                {section name=itemMeridien loop=$listeMeridiens}
+                {assign var=meridien value=$listeMeridiens[itemMeridien]}
+				<option id="$meridien->_code">
+                    {$meridien->_nom}
+                </option>
+                {/section}
 			</select>
 				
 			<label for="filtre-carac">Caractéristiques : </label>
@@ -29,8 +33,8 @@
 			<div id="liste-fiches">
 				<h3>Listes pathologies :</h3>
                 <ul>
-                {section name=listePatho loop=$listePatho}
-                {assign var=patho value=$listePatho[listePatho]}
+                {section name=itemPatho loop=$listePatho}
+                {assign var=patho value=$listePatho[itemPatho]}
                   <li id="{$patho->_id}">
                       <span>{$patho->_desc}</span>
                   </li>

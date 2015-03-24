@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-21 15:43:04
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-24 11:03:21
          compiled from "/Users/jonathanplay/Documents/CPE/4IRC/S8/TLI/site-web-tli/tpl/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:7093592705501bb8c8c34e9-58110020%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '3d5d0c7a5cf70122fe33e247f54aa8a0fe6b2c77' => 
     array (
       0 => '/Users/jonathanplay/Documents/CPE/4IRC/S8/TLI/site-web-tli/tpl/header.tpl',
-      1 => 1426178618,
+      1 => 1427191397,
       2 => 'file',
     ),
   ),
@@ -60,7 +60,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		</form>
     	<!-- Menu de navigation -->
         <nav id="menu">
-            	<ul class="nav navbar-nav">
+            	<ul class="nav">
                 	<li><a href="/index.php?page=index" >ACCUEIL</a></li>
                 	<li><a href="/index.php?page=patho">PATHOLOGIES</a></li>
 				</ul>

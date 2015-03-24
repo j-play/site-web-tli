@@ -2,6 +2,7 @@ IMPORTANT :
 -> Afficher les détails d'une pathologie dans la partie descriptive
 -> Faire fichier XML d'une pathologie (TP10)
 -> Faire flux RSS avec fichier XML
+-> Faire le htaccess
 
 MOINS IMPORTANT :
 -> Améliorer affichage de la liste des pathologie

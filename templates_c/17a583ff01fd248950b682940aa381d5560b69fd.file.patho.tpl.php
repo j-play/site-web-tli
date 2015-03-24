@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-24 10:20:19
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-24 11:03:21
          compiled from "/Users/jonathanplay/Documents/CPE/4IRC/S8/TLI/site-web-tli/tpl/pages/patho.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:421897963550d837f3a27e4-78699106%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '17a583ff01fd248950b682940aa381d5560b69fd' => 
     array (
       0 => '/Users/jonathanplay/Documents/CPE/4IRC/S8/TLI/site-web-tli/tpl/pages/patho.tpl',
-      1 => 1427188818,
+      1 => 1427191012,
       2 => 'file',
     ),
   ),
@@ -26,7 +26,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_550d837f3fa514_89104953')) {function content_550d837f3fa514_89104953($_smarty_tpl) {?><main>
 	<section id="pathologies">
-		<h2>Pathologies</h2>
+		<h2 id="titrePatho">Pathologies</h2>
 		<form id="filtres"> 
 			<label for="filtre-tpatho">Type de pathologie : </label>
 			<select id="filtre-tpatho">
@@ -86,6 +86,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['listePatho']['last']       =
 </span>
                   </li>
                 <?php endfor; endif; ?>
+                </ul>
 			</div>
 			<!-- Fiche de la pathologie affichée -->
 			<div id="fiche-patho-select">
