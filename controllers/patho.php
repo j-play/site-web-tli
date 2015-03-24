@@ -4,5 +4,5 @@
     
     // Récupération de la liste des pathologies puis assignation pour affichage dans le template des pathologies
     $smarty->assign('listePatho', GestionPathologie::recupererListePathologies());
-    $smarty->assign('listeMeridiens', GestionMeridien::recupererListeMeridiens());
+    $smarty->assign('listeMeridiens', GestionPathologie::recupererListeMeridiens());
 ?>

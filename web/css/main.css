@@ -149,21 +149,11 @@ input.form_col{
 #liste-fiches{
 	width: 22%;
 	height: 100%;
-    overflow: scroll;
+    overflow-y: scroll;
 	display: inline-block;
 	border-right-color: black;
 	border-right-style: solid;
 	border-right-width: medium;
-}
-
-#liste-fiches ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: disc;
-}
-
-#liste-fiches ul li {
-    list-style: outside none none;
 }
 
 #fiche-patho-select{

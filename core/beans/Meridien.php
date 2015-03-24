@@ -8,7 +8,7 @@ class Meridien {
     private $_yin;
 
     // Constructeur
-	public function __construct($pseudo, $nom, $element, $yin){
+	public function __construct($code, $nom, $element, $yin){
 		$this->_code = $code;
         $this->_nom = $nom;
         $this->_element = $element;
