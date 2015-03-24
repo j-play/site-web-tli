@@ -19,8 +19,21 @@ class PathologieDAO {
      * Retourne la liste des pathologies existantes
      * @return Pathologie[] $listePatho liste des pathologies existantes
      */
-    public function recupererListe(){
+    public function recupererListe($typePatho, $meridien, $caracPatho, $motCle){
         try{
+            
+            /*$requete = "SELECT * FROM patho";
+            
+            if($typePatho != 'null' || $meridien != 'null' || $caracPatho != 'null' || $motCle != 'null'){
+                $requete = $requete." WHERE ";
+                
+                if($meridien != 'null'){
+                    $requete= $requete."mer = :meridien";
+                }
+            }*/
+            
+            // array avec les différents bind
+                
 			$stmt = $this->_bdd->prepare("SELECT * FROM patho");
 			$stmt ->execute();
 			$result = $stmt ->fetchAll();
@@ -28,12 +41,14 @@ class PathologieDAO {
             $listePatho = array();
             
             foreach($result as $r) { 
+                
                 // On récupere le meridien pour chaque pathologie
                 $stmtMeridien = $this->_bdd->prepare("SELECT * FROM meridien JOIN patho ON meridien.code = patho.mer WHERE patho.idP = :idPatho ");
                 $stmtMeridien->bindValue(':idPatho', $r['idP']);
                 $stmtMeridien->execute();
                 $resultMeridien = $stmtMeridien ->fetch(PDO::FETCH_ASSOC);
                 $meridien = new Meridien($resultMeridien['code'], $resultMeridien['nom'], $resultMeridien['element'], $resultMeridien['yin']);
+                
                 // On récupere les symptomes pour chaque pathologie 
                 $stmtSymptome = $this->_bdd->prepare("SELECT * FROM symptome JOIN symptPatho ON symptome.idS = symptPatho.idS WHERE symptPatho.idP = :idPatho ");
                 $stmtSymptome->bindValue(':idPatho', $r['idP']);

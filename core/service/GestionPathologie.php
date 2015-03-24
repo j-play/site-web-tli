@@ -16,16 +16,20 @@ require_once(_CORE_.'util/Database.php');
 class GestionPathologie {
     
    /**
-	* Récupère la liste des pathologies existantes (identifiant, description, etc.) sans filtres
+	* Récupère la liste des pathologies existantes (identifiant, description, etc.) avec des filtres optionnels
+    * @param String|null $typePatho filtre du type de pathologie
+    * @param String|null $meridien filtre du type de pathologie
+    * @param String|null $caracPatho filtre du type de pathologie
+    * @param String|null $motCle filtre du type de pathologie
 	* @return Pathologie[] $listePatho liste de pathologies
 	*/
-    public static function recupererListePathologies(){
+    public static function recupererListePathologies($typePatho, $meridien, $caracPatho, $motCle){
         
         $bdd = new Database();
         $daoPathologie = new PathologieDAO($bdd);
 
         //Renvoie de la liste de toutes les pathologies trouvées	    
-        return $daoPathologie->recupererListe();
+        return $daoPathologie->recupererListe($typePatho, $meridien, $caracPatho, $motCle);
     }
     
     /**

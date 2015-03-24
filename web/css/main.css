@@ -124,7 +124,7 @@ input.form_col{
 
 #corps-patho {
     width: 100%;
-	height: 79%;
+	height: 87%;
 	border-top-color : black;
 	border-top-style: solid;
 	border-top-width: medium;
@@ -132,7 +132,7 @@ input.form_col{
 #filtres{
 	display: block;
     width: 100%;
-	height: 10%;
+	height: 5%;
 }
 
 #filtres select{
@@ -166,7 +166,7 @@ input.form_col{
 	text-align: center;
 }
 #titrePatho {
-    height: 10%;
+    height: 7%;
     width: 100%;
     margin: 0%;
 }
