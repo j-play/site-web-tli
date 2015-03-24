@@ -53,17 +53,19 @@
 			</div>
 			<!-- Fiche de la pathologie affichée -->
 			<div id="fiche-patho-select">
+                {if isset($pathologie)}
 				<h2>{$pathologie->_desc}</h2>
-                <p>Méridien: {$patho->_meridien}</p>
+                <p>Méridien: {$pathologie->_meridien}</p>
+                <h3>Liste des symptômes:</h3>
                 <ul>
-                {section name=itemSymptome loop=$patho->_listeSymptomes}
-                {assign var=symptome value=$patho->_listeSymptomes[itemSymptome]}
+                {section name=itemSymptome loop=$pathologie->_listeSymptomes}
+                {assign var=symptome value=$pathologie->_listeSymptomes[itemSymptome]}
                   <li>
-                      {$symptome->_desc}
+                    {$symptome->_desc}
                   </li>
                 {/section}
-                
-                
+                </ul> 
+                {/if}               
 			</div>
 		</div>
 	</section>

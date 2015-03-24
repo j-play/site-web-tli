@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-24 15:57:02
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-24 16:11:59
          compiled from "/Users/Baptiste/github/site-web-tli/tpl/pages/patho.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:934913891550e8e3bbe97c9-17747377%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4dd95cd324958115e54b829a718485ec57877e9f' => 
     array (
       0 => '/Users/Baptiste/github/site-web-tli/tpl/pages/patho.tpl',
-      1 => 1427209013,
+      1 => 1427209915,
       2 => 'file',
     ),
   ),
@@ -133,14 +133,16 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['itemPatho']['last']       = 
 			</div>
 			<!-- Fiche de la pathologie affichée -->
 			<div id="fiche-patho-select">
+                <?php if (isset($_smarty_tpl->tpl_vars['pathologie']->value)) {?>
 				<h2><?php echo $_smarty_tpl->tpl_vars['pathologie']->value->_desc;?>
 </h2>
-                <p>Méridien: <?php echo $_smarty_tpl->tpl_vars['patho']->value->_meridien;?>
+                <p>Méridien: <?php echo $_smarty_tpl->tpl_vars['pathologie']->value->_meridien;?>
 </p>
+                <h3>Liste des symptômes:</h3>
                 <ul>
                 <?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['itemSymptome'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['itemSymptome']);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['itemSymptome']['name'] = 'itemSymptome';
-$_smarty_tpl->tpl_vars['smarty']->value['section']['itemSymptome']['loop'] = is_array($_loop=$_smarty_tpl->tpl_vars['patho']->value->_listeSymptomes) ? count($_loop) : max(0, (int) $_loop); unset($_loop);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['itemSymptome']['loop'] = is_array($_loop=$_smarty_tpl->tpl_vars['pathologie']->value->_listeSymptomes) ? count($_loop) : max(0, (int) $_loop); unset($_loop);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['itemSymptome']['show'] = true;
 $_smarty_tpl->tpl_vars['smarty']->value['section']['itemSymptome']['max'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['itemSymptome']['loop'];
 $_smarty_tpl->tpl_vars['smarty']->value['section']['itemSymptome']['step'] = 1;
@@ -162,14 +164,14 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['itemSymptome']['index_next']
 $_smarty_tpl->tpl_vars['smarty']->value['section']['itemSymptome']['first']      = ($_smarty_tpl->tpl_vars['smarty']->value['section']['itemSymptome']['iteration'] == 1);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['itemSymptome']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['itemSymptome']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['itemSymptome']['total']);
 ?>
-                <?php $_smarty_tpl->tpl_vars['symptome'] = new Smarty_variable($_smarty_tpl->tpl_vars['patho']->value->_listeSymptomes[$_smarty_tpl->getVariable('smarty')->value['section']['itemSymptome']['index']], null, 0);?>
+                <?php $_smarty_tpl->tpl_vars['symptome'] = new Smarty_variable($_smarty_tpl->tpl_vars['pathologie']->value->_listeSymptomes[$_smarty_tpl->getVariable('smarty')->value['section']['itemSymptome']['index']], null, 0);?>
                   <li>
-                      <?php echo $_smarty_tpl->tpl_vars['symptome']->value->_desc;?>
+                    <?php echo $_smarty_tpl->tpl_vars['symptome']->value->_desc;?>
 
                   </li>
                 <?php endfor; endif; ?>
-                
-                
+                </ul> 
+                <?php }?>               
 			</div>
 		</div>
 	</section>
