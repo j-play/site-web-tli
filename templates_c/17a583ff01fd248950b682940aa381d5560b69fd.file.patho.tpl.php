@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-24 14:29:17
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-24 15:25:43
          compiled from "/Users/jonathanplay/Documents/CPE/4IRC/S8/TLI/site-web-tli/tpl/pages/patho.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:421897963550d837f3a27e4-78699106%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '17a583ff01fd248950b682940aa381d5560b69fd' => 
     array (
       0 => '/Users/jonathanplay/Documents/CPE/4IRC/S8/TLI/site-web-tli/tpl/pages/patho.tpl',
-      1 => 1427203722,
+      1 => 1427207134,
       2 => 'file',
     ),
   ),
@@ -29,15 +29,20 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_550d837f3fa514_89104953')) {function content_550d837f3fa514_89104953($_smarty_tpl) {?><main>
 	<section id="pathologies">
 		<h2 id="titrePatho">Pathologies</h2>
-		<form id="filtres"> 
+		<form id="filtres" action="/index.php?page=patho" method="POST"> 
 			<label for="filtre-tpatho">Type de pathologie : </label>
-			<select id="filtre-tpatho">
-				<option>Type pathologie 1</option>
-				<option>Type pathologie 2</option>
+			<select id="filtre-tpatho" name="filtre-tpatho">
+                <option value="null">Aucun</option>
+				<option value ="m">Méridien</option>
+                <option value ="tf">Organe/Viscère</option>
+                <option value ="l">Luo</option>
+                <option value ="l2">Merveilleux vaisseaux</option>
+                <option value ="j">Jing jin</option>
 			</select>
 				
 			<label for="filtre-meridien">Méridiens : </label>
 			<select id="filtre-meridien">
+                <option value="null">Aucun</option>
                 <?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien']);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien']['name'] = 'itemMeridien';
 $_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien']['loop'] = is_array($_loop=$_smarty_tpl->tpl_vars['listeMeridiens']->value) ? count($_loop) : max(0, (int) $_loop); unset($_loop);
@@ -63,7 +68,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien']['first']     
 $_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien']['total']);
 ?>
                 <?php $_smarty_tpl->tpl_vars['meridien'] = new Smarty_variable($_smarty_tpl->tpl_vars['listeMeridiens']->value[$_smarty_tpl->getVariable('smarty')->value['section']['itemMeridien']['index']], null, 0);?>
-				<option id="$meridien->_code">
+				<option value="$meridien->_code">
                     <?php echo $_smarty_tpl->tpl_vars['meridien']->value->_nom;?>
 
                 </option>
@@ -72,8 +77,13 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien']['last']      
 				
 			<label for="filtre-carac">Caractéristiques : </label>
 			<select id="filtre-carac">
-				<option>Caractéristique 1</option>
-				<option>Caractéristique 2</option>
+                <option value="null">Aucun</option>
+				<option value ="p">Plein</option>
+                <option value ="c">Chaud</option>
+                <option value ="v">Vide</option>
+                <option value ="f">Froid</option>
+                <option value ="i">Interne</option>
+                <option value ="e">Externe</option>
 			</select>
 				
 			<label for="filtre-mot-cle">Mot clé : </label>
