@@ -1,18 +1,23 @@
 <main>
 	<section id="pathologies">
 		<h2 id="titrePatho">Pathologies</h2>
-		<form id="filtres"> 
+		<form id="filtres" action="index.php?page=patho" method="POST"> 
 			<label for="filtre-tpatho">Type de pathologie : </label>
 			<select id="filtre-tpatho">
-				<option>Type pathologie 1</option>
-				<option>Type pathologie 2</option>
+                <option value="null">Aucun</option>
+				<option value ="m">Méridien</option>
+                <option value ="tf">Organe/Viscère</option>
+                <option value ="l">Luo</option>
+                <option value ="l2">Merveilleux vaisseaux</option>
+                <option value ="j">Jing jin</option>
 			</select>
 				
 			<label for="filtre-meridien">Méridiens : </label>
 			<select id="filtre-meridien">
+                <option value="null">Aucun</option>
                 {section name=itemMeridien loop=$listeMeridiens}
                 {assign var=meridien value=$listeMeridiens[itemMeridien]}
-				<option id="$meridien->_code">
+				<option value="$meridien->_code">
                     {$meridien->_nom}
                 </option>
                 {/section}
@@ -20,8 +25,13 @@
 				
 			<label for="filtre-carac">Caractéristiques : </label>
 			<select id="filtre-carac">
-				<option>Caractéristique 1</option>
-				<option>Caractéristique 2</option>
+                <option value="null">Aucun</option>
+				<option value ="p">Plein</option>
+                <option value ="c">Chaud</option>
+                <option value ="v">Vide</option>
+                <option value ="f">Froid</option>
+                <option value ="i">Interne</option>
+                <option value ="e">Externe</option>
 			</select>
 				
 			<label for="filtre-mot-cle">Mot clé : </label>
