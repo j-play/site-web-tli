@@ -2,9 +2,8 @@
 	require_once(_CORE_.'beans/Pathologie.php');
 	require_once(_CORE_.'service/GestionPathologie.php');
     
-    if(isset($_POST['filtre-tpatho']) && !empty($_POST['filtre-tpatho'])){
+    if(isset($_POST['filtre-tpatho'])){
         // Si on arrive dans le contrôlleur avec une requête POST (formulaire des filtres des pathologies
-        
         $typePatho="";
         $meridien="";
         $caracPatho="";
@@ -23,8 +22,8 @@
     	if (isset($_POST['filtre-mot-cle'])){
     		$motCle = htmlentities($_POST['filtre-mot-cle'], ENT_QUOTES, 'UTF-8');
 		}
-        
         $smarty->assign('listePatho', GestionPathologie::recupererListePathologies($typePatho, $meridien, $caracPatho, $motCle));
+        $smarty->assign('listeMeridiens', GestionPathologie::recupererListeMeridiens());
         
     }
     else{

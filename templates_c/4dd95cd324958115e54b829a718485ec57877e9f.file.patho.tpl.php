@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-03-24 16:36:10
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-01 18:54:04
          compiled from "/Users/Baptiste/github/site-web-tli/tpl/pages/patho.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:934913891550e8e3bbe97c9-17747377%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4dd95cd324958115e54b829a718485ec57877e9f' => 
     array (
       0 => '/Users/Baptiste/github/site-web-tli/tpl/pages/patho.tpl',
-      1 => 1427211365,
+      1 => 1427907231,
       2 => 'file',
     ),
   ),
@@ -34,7 +34,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<form id="filtres" action="/index.php?page=patho" method="POST"> 
 			<label for="filtre-tpatho">Type de pathologie : </label>
 			<select id="filtre-tpatho" name="filtre-tpatho">
-                <option value="null">Aucun</option>
+                <option value="">Aucun</option>
 				<option value ="m">Méridien</option>
                 <option value ="tf">Organe/Viscère</option>
                 <option value ="l">Luo</option>
@@ -44,7 +44,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 				
 			<label for="filtre-meridien">Méridiens : </label>
 			<select id="filtre-meridien" name="filtre-meridien">
-                <option value="null">Aucun</option>
+                <option value="">Aucun</option>
                 <?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien']);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien']['name'] = 'itemMeridien';
 $_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien']['loop'] = is_array($_loop=$_smarty_tpl->tpl_vars['listeMeridiens']->value) ? count($_loop) : max(0, (int) $_loop); unset($_loop);
@@ -79,7 +79,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien']['last']      
 				
 			<label for="filtre-carac">Caractéristiques : </label>
 			<select id="filtre-carac" name="filtre-carac">
-                <option value="null">Aucun</option>
+                <option value="">Aucun</option>
 				<option value ="p">Plein</option>
                 <option value ="c">Chaud</option>
                 <option value ="v">Vide</option>

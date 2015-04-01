@@ -22,22 +22,72 @@ class PathologieDAO {
     public function recupererListe($typePatho, $meridien, $caracPatho, $motCle){
         try{
             
-            /*$requete = "SELECT * FROM patho";
-            
-            if($typePatho != 'null' || $meridien != 'null' || $caracPatho != 'null' || $motCle != 'null'){
-                $requete = $requete." WHERE ";
-                
-                if($meridien != 'null'){
-                    $requete= $requete."mer = :meridien";
+            $requete = "SELECT * FROM patho "; // faire les jointures
+            $where = "";
+            $jointure = "";
+            $filtres = array();
+            if($typePatho != '' || $meridien != '' || $caracPatho != '' || $motCle != ''){
+            	$where = "WHERE ";
+               // $requete = $requete." WHERE ";
+                $first = false;
+                if($meridien  != ''){
+                	$filtres[":meridien"] = $meridien ;
+                	$jointure = " JOIN meridien ON patho.mer = meridien.code ";
+                	if($first == false){
+                    	$where= $where."mer = :meridien";
+                    	$first = true;
+                    }
+                    else{
+                    	$where= $where." AND mer = :meridien";
+                    }
                 }
-            }*/
+                if($typePatho != ''){
+                	$typePatho = "%".$typePatho;
+                	$filtres[":typePatho"] = $typePatho;             	
+                	if($first == false){
+                    	$where= $where."type LIKE :typePatho";
+                    	$first = true;
+                    }
+                    else{
+                    	$where= $where." AND type LIKE :typePatho";
+                    }
+                }
+                if($caracPatho != ''){
+                	$caracPatho = "%".$caracPatho;
+                	$filtres[":caracPatho"] = $caracPatho;       	
+                	if($first == false){
+						$where= $where."type LIKE :caracPatho";
+                    	$first = true;
+                    }
+                    else{
+                    	$where= $where." AND type LIKE :caracPatho";
+                    }
+                }
+                if($motCle != ''){
+                	$filtres[":motCle"] = $motCle;
+                	$jointure = " JOIN symptPatho ON patho.idP = symptPatho.idP 
+                	JOIN keySympt ON keySympt.idS = symptPatho.idS
+                	JOIN keywords ON keywords.idK = keySympt.idK ";
+                	if($first == false){
+                    	$where= $where."name = :motCle";
+                    }
+                    else{
+                    	$where= $where." AND name = :motCle";
+                    }
+                }
+			}
+             $requete = $requete.$jointure.$where;
+             $stmtPatho = $this->_bdd->prepare($requete);           
+             foreach ($filtres as $key => $value){
+             	 $stmtPatho->bindParam($key, $value); 
+             }  
+			$stmtPatho->execute();
             
-            // array avec les différents bind
+            // array avec les différents bindValue
                 
-			$stmt = $this->_bdd->prepare("SELECT * FROM patho");
-			$stmt ->execute();
-			$result = $stmt ->fetchAll();
-            
+			/*$stmt = $this->_bdd->prepare("SELECT * FROM patho");
+			$stmt ->execute(); */
+			$result = $stmtPatho ->fetchAll();
             $listePatho = array();
             
             foreach($result as $r) { 
@@ -62,7 +112,7 @@ class PathologieDAO {
                 $patho = new Pathologie($r['idP'], $r['desc'], $r['type'],$meridien,$listeSymptome);
                 array_push($listePatho, $patho);
             }
-            
+            //var_dump($listePatho);
             return $listePatho;
             
 		}

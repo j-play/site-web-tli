@@ -4,7 +4,7 @@
 		<form id="filtres" action="/index.php?page=patho" method="POST"> 
 			<label for="filtre-tpatho">Type de pathologie : </label>
 			<select id="filtre-tpatho" name="filtre-tpatho">
-                <option value="null">Aucun</option>
+                <option value="">Aucun</option>
 				<option value ="m">Méridien</option>
                 <option value ="tf">Organe/Viscère</option>
                 <option value ="l">Luo</option>
@@ -14,7 +14,7 @@
 				
 			<label for="filtre-meridien">Méridiens : </label>
 			<select id="filtre-meridien" name="filtre-meridien">
-                <option value="null">Aucun</option>
+                <option value="">Aucun</option>
                 {section name=itemMeridien loop=$listeMeridiens}
                 {assign var=meridien value=$listeMeridiens[itemMeridien]}
 				<option value="$meridien->_code">
@@ -25,7 +25,7 @@
 				
 			<label for="filtre-carac">Caractéristiques : </label>
 			<select id="filtre-carac" name="filtre-carac">
-                <option value="null">Aucun</option>
+                <option value="">Aucun</option>
 				<option value ="p">Plein</option>
                 <option value ="c">Chaud</option>
                 <option value ="v">Vide</option>
