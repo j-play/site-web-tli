@@ -17,7 +17,7 @@
                 <option value="">Aucun</option>
                 {section name=itemMeridien loop=$listeMeridiens}
                 {assign var=meridien value=$listeMeridiens[itemMeridien]}
-				<option value="$meridien->_code">
+				<option value="{$meridien->_code}">
                     {$meridien->_nom}
                 </option>
                 {/section}

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-01 18:54:04
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-07 18:22:14
          compiled from "/Users/Baptiste/github/site-web-tli/tpl/pages/patho.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:934913891550e8e3bbe97c9-17747377%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4dd95cd324958115e54b829a718485ec57877e9f' => 
     array (
       0 => '/Users/Baptiste/github/site-web-tli/tpl/pages/patho.tpl',
-      1 => 1427907231,
+      1 => 1428423730,
       2 => 'file',
     ),
   ),
@@ -70,7 +70,8 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien']['first']     
 $_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien']['total']);
 ?>
                 <?php $_smarty_tpl->tpl_vars['meridien'] = new Smarty_variable($_smarty_tpl->tpl_vars['listeMeridiens']->value[$_smarty_tpl->getVariable('smarty')->value['section']['itemMeridien']['index']], null, 0);?>
-				<option value="$meridien->_code">
+				<option value="<?php echo $_smarty_tpl->tpl_vars['meridien']->value->_code;?>
+">
                     <?php echo $_smarty_tpl->tpl_vars['meridien']->value->_nom;?>
 
                 </option>
