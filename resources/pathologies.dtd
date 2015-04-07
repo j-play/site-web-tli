@@ -1,0 +1,18 @@
+<!-- DTD pour une pathologie -->
+<!ENTITY % laDtdXHTML PUBLIC
+  "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd" >
+%laDtdXHTML;
+
+<!-- pour le contenu litéraire -->
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT meridien (#PCDATA)>
+<!ELEMENT symptome (#PCDATA)>
+<!ELEMENT listesymptomes (symptome)*>
+<!ELEMENT pathologie ((meridien, description, type, listesymptomes)?)>
+<!ELEMENT listepathologie (pathologie)*>
+
+<!ATTLIST pathologie type (m | l | tf| l2 | j) #REQUIRED>
+<!ATTLIST pathologie caracteristique (p | c | v | f | i | e) #REQUIRED>
+
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	elementFormDefault="qualified" attributeFormDefault="unqualified"
+	targetNamespace="http://pathologie.fr/xsl" xmlns:pat="http://pathologie.fr/xsl">
+    
+    
+    <xs:element name="listepathologie" type="pat:pathologies"/>
+    <xs:complexType name="pathologies">
+		<xs:sequence>
+			<xs:element name="pathologie" type="pat:pathologie" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>
+    
+    <xs:complexType name="pathologie">
+		<xs:all>
+			<xs:element name="meridien" type="xs:string" minOccurs="1" maxOccurs="1" />
+			<xs:element name="description" type="xs:string" minOccurs="1" maxOccurs="1" />
+            <xs:element name="listemeridien" type="xs:string" minOccurs="1" maxOccurs="1" />
+		</xs:all>
+		<xs:attribute name="type" type="pat:type" />
+		<xs:attribute name="caracteristique" type="pat:caracteristique" />
+	</xs:complexType>
+    
+    <xs:simpleType name="type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="m" />
+			<xs:enumeration value="l" />
+			<xs:enumeration value="tf" />
+			<xs:enumeration value="l2" />
+            <xs:enumeration value="j" />
+		</xs:restriction>
+	</xs:simpleType>
+    
+    <xs:simpleType name="caracteristique">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="p" />
+			<xs:enumeration value="c" />
+			<xs:enumeration value="v" />
+			<xs:enumeration value="f" />
+            <xs:enumeration value="i" />
+            <xs:enumeration value="e" />
+		</xs:restriction>
+	</xs:simpleType>
+    
+    <xs:complexType name="symptomes">
+		<xs:sequence>
+			<xs:element name="symptome" type="pat:symptome"  maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:complexType>   
+</xs:schema>
