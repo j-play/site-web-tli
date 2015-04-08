@@ -22,4 +22,7 @@
 	// Define du dossier des logs
 	define('_LOGS_', _PATH_ . 'logs/');
 
+    // Define du dossier des logs
+	define('_RESOURCES_', _PATH_ . 'resources/');
+
 ?>

@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>Liste des Pathologies</title>
+		<description>Liste des Pathologies avec leurs symtomes</description>
+		<link>http://localhost:8888/index.php?page=patho</link>
+		<lastBuildDate>2015-04-08 09:46:11</lastBuildDate>
+		<item>
+			<title>méridien du poumon externe</title>
+			<description> Liste des symptomes:Battement des ailes du nezDessèchement des phanèresDouleur lancinante au creux sus-claviculairePouls superficielSymptômes thoraco-pulmonaires (toux continuelle, dyspnée, gonflement thoracique)Transpiration avec pollakiurie et diminution de l'appétitVue floue dans les cas graves</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=1</link>
+			<category>Poumon</category>
+		</item>
+		<item>
+			<title>méridien du poumon interne</title>
+			<description> Liste des symptomes:Angoisse se manifestant par des serrements de poitrineBallonnement abdominalDouleur à l'épaule et au dos avec urines claires et respiration courteDouleur le long du trajet du méridienEmbarras gastriqueMembres supérieurs froidsRespiration courte et touxSensation de froid ou de chaleur à la paume des mainsSoif</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=2</link>
+			<category>Poumon</category>
+		</item>
+		<item>
+			<title>voie luo du poumon pleine</title>
+			<description> Liste des symptomes:Chaleur des mains et de l'éminence thénar</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=3</link>
+			<category>Poumon</category>
+		</item>
+		<item>
+			<title>voie luo du poumon vide</title>
+			<description> Liste des symptomes:BâillementsMictions fréquentes en grande quantité</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=4</link>
+			<category>Poumon</category>
+		</item>
+		<item>
+			<title>jing jin du poumon</title>
+			<description> Liste des symptomes:Blocage de la respiration, peï du 2ème mois d'hivers</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=5</link>
+			<category>Poumon</category>
+		</item>
+		<item>
+			<title>zang poumon plein</title>
+			<description> Liste des symptomes:Épaule et dos douloureuxNauséePlénitude douloureuse de la poitrine (emphysème) et des côtes entraînant dyspnée et toux avec mucosités purulentes</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=6</link>
+			<category>Poumon</category>
+		</item>
+		<item>
+			<title>zang poumon vide</title>
+			<description> Liste des symptomes:AlopécieAsthénie et amaigrissementFièvre et transpiration brutale et intermittenteGorge et peau sèchesRespiration faibleToux avec envie d'urinerVisage pâle et joues rougesVoix faible</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=7</link>
+			<category>Poumon</category>
+		</item>
+		<item>
+			<title>zang poumon chaud</title>
+			<description> Liste des symptomes:Constipation, selles duresDouleur thoracique aiguë comme un coup de poignardDysurie et hématurieÉpistaxisGorge irritéeSoifToux avec hémoptysieVisage fiévreux</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=8</link>
+			<category>Poumon</category>
+		</item>
+		<item>
+			<title>zang poumon froid</title>
+			<description> Liste des symptomes:Absence de soifDouleur thoracique sourde, dyspnée et toux</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=9</link>
+			<category>Poumon</category>
+		</item>
+		<item>
+			<title>méridien du gros intestin externe</title>
+			<description> Liste des symptomes:Chaleur et enflure sur le trajet du méridienInflammation douloureuse des gencives et des dentsMal de gorge et tuméfaction du couDouleur étranglante abdominale ascendante au cœur avec racine dans le sexe (homme)</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=10</link>
+			<category>Gros intestin</category>
+		</item>
+		<item>
+			<title>méridien du gros intestin interne</title>
+			<description> Liste des symptomes:Amygdalite, gorge irritéeCoryza et épistaxisDouleur sur le trajet du méridien avec paralysie de l'indexFrissons, tremblements et difficultés à se réchaufferSécheresse de la boucheSoif excessiveYeux jaunes</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=11</link>
+			<category>Gros intestin</category>
+		</item>
+		<item>
+			<title>voie luo du gros intestin pleine</title>
+			<description> Liste des symptomes:Carie dentaire, surdité</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=12</link>
+			<category>Gros intestin</category>
+		</item>
+		<item>
+			<title>voie luo du gros intestin vide</title>
+			<description> Liste des symptomes:Contraction du diaphragmeFroid aux dents</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=13</link>
+			<category>Gros intestin</category>
+		</item>
+		<item>
+			<title>jing jin du gros intestin</title>
+			<description> Liste des symptomes:Épaule bloquée, rotation du cou impossible, peï du premier mois d'été</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=14</link>
+			<category>Gros intestin</category>
+		</item>
+		<item>
+			<title>fu gros intestin plein</title>
+			<description> Liste des symptomes:Abdomen dilaté, douloureux et chaudAgitationConstipation spasmodiqueDouleur lombaireInflammation de la boucheInsomnieLangue rougeParle en dormantSang dans les sellesTranspiration brusque</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=15</link>
+			<category>Gros intestin</category>
+		</item>
+		<item>
+			<title>fu gros intestin vide</title>
+			<description> Liste des symptomes:Abdomen flasqueDécouragement et dépressionDiarrhéeFroid, ne peut se réchaufferPtôse rectale</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=16</link>
+			<category>Gros intestin</category>
+		</item>
+		<item>
+			<title>fu gros intestin chaud</title>
+			<description> Liste des symptomes:Bouche et lèvres sèchesDistension et douleur de l'abdomen et de l'anusHémorroïdesSelles avec odeur nauséabonde</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=17</link>
+			<category>Gros intestin</category>
+		</item>
+		<item>
+			<title>fu gros intestin froid</title>
+			<description> Liste des symptomes:Douleur abdominaleExtrémités froidesGargouillis permanentsSelles finesUrines claires et abondantes</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=18</link>
+			<category>Gros intestin</category>
+		</item>
+		<item>
+			<title>méridien de l'estomac externe</title>
+			<description> Liste des symptomes:Aspect noirâtre de la face et du frontAttitude psychotique (grimper en haut, chanter, se déshabiller et courir dans tous les sens)Bâillements et gémissementsColiquesDésir de se cambrer et d'allonger les jambesPhobiesSensation de faim; couleur du visage et des urines devient jauneSursautes aux craquements de boisToutes les peurs névrotiques (du feu, des gens, des lieux)</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=19</link>
+			<category>Estomac</category>
+		</item>
+		<item>
+			<title>méridien de l'estomac interne</title>
+			<description> Liste des symptomes:Ballonnements, frissons et sensation de froid à la partie antérieure du corpsCoryza clairDouleur le long du trajet du méridien avec paralysie du 3ème orteilFièvre et frilositéFolieGonflement abdominalParalysie facialePharyngitePlaies saignantes des lèvres ou de la boucheTranspiration</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=20</link>
+			<category>Estomac</category>
+		</item>
+		<item>
+			<title>voie luo de l'estomac pleine</title>
+			<description> Liste des symptomes:Difficulté de déglutition et aphonie subitePsychose maniaco-dépressive</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=21</link>
+			<category>Estomac</category>
+		</item>
+		<item>
+			<title>voie luo de l'estomac vide</title>
+			<description> Liste des symptomes:Muscles des jambes atrophiés et dévitalisés</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=22</link>
+			<category>Estomac</category>
+		</item>
+		<item>
+			<title>jing jin de l'estomac</title>
+			<description> Liste des symptomes:Crampe à la face antérieure de la jambe dans la région du xxxiiECrampe aux 2ème, 3ème et 4ème orteilsDéviation de la bouche et des yeuxDouleur constrictive de la région génitale et de l'abdomenImpossibilité d'ouvrir les yeux par hypotonie musculaireImpossibilité de fermer les paupières par contractureŒdème au pubis et à l'ainePeï du 3ème mois de printemps</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=23</link>
+			<category>Estomac</category>
+		</item>
+		<item>
+			<title>fu estomac plein et chaud</title>
+			<description> Liste des symptomes:Douleur abdominal aiguëExcès d'appétitHaleine chaude ou fétideLèvres rouges et brillantesPoitrine dilatéeTête congestionnée</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=24</link>
+			<category>Estomac</category>
+		</item>
+		<item>
+			<title>fu estomac vide et froid</title>
+			<description> Liste des symptomes:Extrémités froidesFaiblesseIndigestionMauvaise haleineMictions faiblesŒdèmePas d'appétitPas de goût pour la viePeau jaune et sans éclatYeux vides</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=25</link>
+			<category>Estomac</category>
+		</item>
+		<item>
+			<title>méridien de la rate externe</title>
+			<description> Liste des symptomes:Ballonnement abdominalDouleur œsophagienne et de l'estomacÉructations fréquentes après défécationRaideur lingualeSensation de corps lourd et douloureuxVomissements postprandiaux</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=26</link>
+			<category>Rate Pancréas</category>
+		</item>
+		<item>
+			<title>méridien de la rate interne</title>
+			<description> Liste des symptomes:Absence de faimDiarrhées blanches sitôt après avoir mangéDouleur à la racine de la langueDouleur et lourdeur épigastriqueGonflement abdominalInsomnie imposant la station deboutJaunisseLèvres bleuesLimitation de la rotation du corpsMictions difficiles, voir arrêt des mictionsŒdèmes à la face interne des cuisses et des genoux avec refroidissement des extrémités et blocage du gros orteilTendance à se mordre les lèvres</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=27</link>
+			<category>Rate Pancréas</category>
+		</item>
+		<item>
+			<title>voie luo de la rate pleine</title>
+			<description> Liste des symptomes:Douleur sourde à l'intérieur des intestins</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=28</link>
+			<category>Rate Pancréas</category>
+		</item>
+		<item>
+			<title>voie luo de la rate vide</title>
+			<description> Liste des symptomes:Gonflement abdominal</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=29</link>
+			<category>Rate Pancréas</category>
+		</item>
+		<item>
+			<title>voie grand luo de la rate pleine</title>
+			<description> Liste des symptomes:Tout le corps douloureux</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=30</link>
+			<category>Rate Pancréas</category>
+		</item>
+		<item>
+			<title>voie grand luo de la rate vide</title>
+			<description> Liste des symptomes:Toutes les articulations sans force</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=31</link>
+			<category>Rate Pancréas</category>
+		</item>
+		<item>
+			<title>jing jin de la rate</title>
+			<description> Liste des symptomes:Crampes dans le mollet et douleur sur les surfaces articulairesDouleur à l'ombilic et à la colonne vertébraleDouleur du gros orteil et de la malléole interneDouleur face interne de la cuisse jusqu'au pubis, contracture douloureuse de l'appareil génitalPeï du 2ème mois d'automne</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=32</link>
+			<category>Rate Pancréas</category>
+		</item>
+		<item>
+			<title>zang rate plein et chaud</title>
+			<description> Liste des symptomes:Douleur abdominal aiguëExcès d'appétitHaleine chaude ou fétideLèvres rouges et brillantesPoitrine dilatéeTête congestionnée</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=33</link>
+			<category>Rate Pancréas</category>
+		</item>
+		<item>
+			<title>zang rate vide et froid</title>
+			<description> Liste des symptomes:Extrémités froidesFaiblesseIndigestionMauvaise haleineMictions faiblesŒdèmePas d'appétitPas de goût pour la viePeau jaune et sans éclatYeux vides</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=34</link>
+			<category>Rate Pancréas</category>
+		</item>
+		<item>
+			<title>méridien du cœur externe</title>
+			<description> Liste des symptomes:Douleur cardiaqueSécheresse de la bouche et de la gorgeSoif</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=35</link>
+			<category>Coeur</category>
+		</item>
+		<item>
+			<title>méridien du cœur interne</title>
+			<description> Liste des symptomes:Chaleur et douleur à la paume des mainsDifficulté respiratoire avec douleur costaleDouleur avec sensation de froid à la face interne de l'avant-bras et du brasSclérotique jaune et ictère de la face</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=36</link>
+			<category>Coeur</category>
+		</item>
+		<item>
+			<title>voie luo du cœur pleine</title>
+			<description> Liste des symptomes:Contraction du diaphragme</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=37</link>
+			<category>Coeur</category>
+		</item>
+		<item>
+			<title>voie luo du cœur vide</title>
+			<description> Liste des symptomes:Impossibilité de parlerInsomnie</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=38</link>
+			<category>Coeur</category>
+		</item>
+		<item>
+			<title>jing jin du cœur</title>
+			<description> Liste des symptomes:Peï du dernier mois d'hiversSi la maladie s'aggrave quand le malade se couche à plat ventre sur un plan dur, état grave de sang et de pusTous les ligaments du trajet sont contractés</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=39</link>
+			<category>Coeur</category>
+		</item>
+		<item>
+			<title>zang cœur plein</title>
+			<description> Liste des symptomes:Fourmillements et picotements cardiaqueHématémèseMénorragiePalpitationsParle en dormantSoifSurexcitation mentale et physiqueUrine rouge ou jaune écarlateVisage rougeYeux rouges et enflés</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=40</link>
+			<category>Coeur</category>
+		</item>
+		<item>
+			<title>zang  cœur vide</title>
+			<description> Liste des symptomes:Douleur soudaine sous les côtesGanglionsOublieuxPollution nocturneRespiration rapideS’effraye facilementTimiditéTranspiration spontanée pendant la journéeTroubles du rythme cardiaqueVisage pâleParanoïa</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=41</link>
+			<category>Coeur</category>
+		</item>
+		<item>
+			<title>méridien de l'intestin grêle externe</title>
+			<description> Liste des symptomes:Douleur de gorgeDouleur de l'articulation de l'épaule avec sensation de cassureDouleur de l'œsophageEnflure de la mâchoire inférieure empêchant la rotation du couMarche en s'inclinant en avant</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=42</link>
+			<category>Intestin Grêle</category>
+		</item>
+		<item>
+			<title>méridien de l'intestin grêle interne</title>
+			<description> Liste des symptomes:Douleur tout le long du trajet du méridienEnflure de la joueSclérotique jauneSurdité</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=43</link>
+			<category>Intestin Grêle</category>
+		</item>
+		<item>
+			<title>voie luo de l'intestin grêle pleine</title>
+			<description> Liste des symptomes:Articulation du coude relâchée, ne fonctionne plus</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=44</link>
+			<category>Intestin Grêle</category>
+		</item>
+		<item>
+			<title>voie luo de l'intestin grêle vide</title>
+			<description> Liste des symptomes:Apparition de petite verrues pédiculées sur le trajet du méridien</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=45</link>
+			<category>Intestin Grêle</category>
+		</item>
+		<item>
+			<title>jing jin de l'intestin grêle</title>
+			<description> Liste des symptomes:Bruit douloureux de l'oreille qui se répercute jusqu'au mentonCou gonflé si les ligaments sont atteints par le froid ou la chaleur nociveDouleur de l'aisselle contournant l'omoplate jusqu'au couDouleur de l'auriculaire vers la face interne du coude jusqu'à l'olécrane et côté interne du brasŒil fermé si la douleur y parvientPeï du 2ème mois d'été</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=46</link>
+			<category>Intestin Grêle</category>
+		</item>
+		<item>
+			<title>fu intestin grêle plein et chaud</title>
+			<description> Liste des symptomes:Diarrhée jaune pâle doréeGaz avec ballonnementsPossibilité de douleur lombaire et douleur dans les testicules ou l'aineSurexcitation et rire facileUrine abondante et rouge</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=47</link>
+			<category>Intestin Grêle</category>
+		</item>
+		<item>
+			<title>fu intestin grêle vide et froid</title>
+			<description> Liste des symptomes:BorborygmesCicatrisation lenteDouleur à l'aineFatigableOligurieSelles rouges ou blanche avec aliments mal digérés</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=48</link>
+			<category>Intestin Grêle</category>
+		</item>
+		<item>
+			<title>méridien de la vessie externe</title>
+			<description> Liste des symptomes:Algie du creux poplité de type compression avec flexion impossible des genouxCéphalées au sommet du crâneCervicalgie à type de torsionDouleur à la colonne vertébraleDouleur au mollet de type déchirureDouleur oculaire avec sensation d'exophtalmieHanche bloquée empêchant la flexionLombalgie de type cassure</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=49</link>
+			<category>Vessie</category>
+		</item>
+		<item>
+			<title>méridien de la vessie interne</title>
+			<description> Liste des symptomes:Céphalées frontales et au sommet de la têteCoxalgieDouleur du mollet et de la face postéro-externe de la jambe avec sensation de déchirureDouleurs du brasEnflure de la joueÉpilepsieÉpistaxisFièvre et frilositéFolieHémorroïdesIctèreLarmoiementsParalysie du 5ème orteilRhinorrhée de liquide clairTorticolisYeux proéminents</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=50</link>
+			<category>Vessie</category>
+		</item>
+		<item>
+			<title>voie luo de la vessie pleine</title>
+			<description> Liste des symptomes:Écoulement nasal continuel sans pouvoir respirerLa région de la tête et du dos est douloureuse</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=51</link>
+			<category>Vessie</category>
+		</item>
+		<item>
+			<title>voie luo de la vessie vide</title>
+			<description> Liste des symptomes:Écoulement rétro-nasalÉpistaxis</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=52</link>
+			<category>Vessie</category>
+		</item>
+		<item>
+			<title>jing jin de la vessie</title>
+			<description> Liste des symptomes:Douleur et œdème du 5ème orteilDouleur et œdème du talonCreux poplité contractéColonne vertébrale pliée à l'enversMuscles et ligaments de la nuques raidisImpossibilité de lever l'épauleDouleur tractive et filiforme de l'aisselle et du creux sus-claviculairePeï du 2ème mois de printemps</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=53</link>
+			<category>Vessie</category>
+		</item>
+		<item>
+			<title>fu vessie plein et chaud</title>
+			<description> Liste des symptomes:CystiteGaz de l'intestin grêle avec douleur et induration</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=54</link>
+			<category>Vessie</category>
+		</item>
+		<item>
+			<title>fu vessie vide et froid</title>
+			<description> Liste des symptomes:ConfusionÉvacuation incomplète de la vessieImpressionnableManque de contrôle de la vessieMiction faible mais fréquenteŒdèmeParasitose</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=55</link>
+			<category>Vessie</category>
+		</item>
+		<item>
+			<title>méridien du rein externe</title>
+			<description> Liste des symptomes:AnorexieDésir être debout quand la personne est assiseÉblouissement sans pouvoir fixer son regardEmbarras gastriqueFrayeurs (impression qu'on va l'incarcérer)MaigreurRespiration rapide et faibleS'attend à une catastrophe, toujours préoccupéTeint noirâtreToux asthmatiforme avec sang nécessitant la position deboutVisage sec, pareil à du bois sec</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=56</link>
+			<category>Rein</category>
+		</item>
+		<item>
+			<title>méridien du rein interne</title>
+			<description> Liste des symptomes:Anxiété et sentiment d'être malheureuxAsthénie et hypersomnieCardialgieChaleur et sécheresse de la bouche, de la langue avec enflure de la gorgeDiarrhéeDouleur à la colonne vertébraleDouleur face interne de la cuisseJaunisseMembres atrophiés et froids avec douleur et chaleur dans la plante du piedTendance à se mordre la langue</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=57</link>
+			<category>Rein</category>
+		</item>
+		<item>
+			<title>voie luo du rein pleine</title>
+			<description> Liste des symptomes:Mictions faiblesRemontée d'énergie qui entraîne inquiétude et ennui</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=58</link>
+			<category>Rein</category>
+		</item>
+		<item>
+			<title>voie luo du rein vide</title>
+			<description> Liste des symptomes:Douleur aux lombes avec sensation de fragilité</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=59</link>
+			<category>Rein</category>
+		</item>
+		<item>
+			<title>jing jin du rein</title>
+			<description> Liste des symptomes:Crampe de la plante du piedCrise épileptiforme, spasmes ou convulsionPeï du 1er mois de l'automneQuand le dos est atteint, on ne peut pas se pencher en avantQuand le ventre est atteint, on ne peut pas se pencher en arrière</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=60</link>
+			<category>Rein</category>
+		</item>
+		<item>
+			<title>zang rein yin vide</title>
+			<description> Liste des symptomes:Douleur et asthénie de la région lombaireHémoptysiePhosphènes et surditéPollution nocturneTranspiration nocturneVision avec flash</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=61</link>
+			<category>Rein</category>
+		</item>
+		<item>
+			<title>zang rein yang vide</title>
+			<description> Liste des symptomes:Diarrhées nocturnesDouleur brûlante dans les reins et l'abdomen avec sensation de froid et de faiblesse aux jambesImpuissanceMouvements fréquents des intestinsSperme froid</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=62</link>
+			<category>Rein</category>
+		</item>
+		<item>
+			<title>méridien du maître du cœur externe</title>
+			<description> Liste des symptomes:Chaleur au milieu de la paume et tremblement des mainsContracture du coude et de l'avant brasFaciès rougeGonflement de l'aissellePoids sur la poitrineRires incessantsTrouble du rythme cardiaque avec plénitude thoraciqueYeux jaunes</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=63</link>
+			<category>Protecteur du coeur</category>
+		</item>
+		<item>
+			<title>méridien du maître du cœur interne</title>
+			<description> Liste des symptomes:Chaleur dans la paume de la mainDouleurs cardiaquesInquiétude</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=64</link>
+			<category>Protecteur du coeur</category>
+		</item>
+		<item>
+			<title>voie luo du maître du cœur pleine</title>
+			<description> Liste des symptomes:Douleur au cœur en coup de poignard</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=65</link>
+			<category>Protecteur du coeur</category>
+		</item>
+		<item>
+			<title>voie luo du maître du cœur vide</title>
+			<description> Liste des symptomes:Cou raide et contracté</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=66</link>
+			<category>Protecteur du coeur</category>
+		</item>
+		<item>
+			<title>jing jin du maître du cœur</title>
+			<description> Liste des symptomes:Douleur sur le trajet du méridienPeï du 1er mois d'hivers</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=67</link>
+			<category>Protecteur du coeur</category>
+		</item>
+		<item>
+			<title>zang maître du cœur plein</title>
+			<description> Liste des symptomes:Fourmillements et picotements cardiaqueHématémèseMénorragiePalpitationsParle en dormantSoifSurexcitation mentale et physiqueUrine rouge ou jaune écarlateVisage rougeYeux rouges et enflés</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=68</link>
+			<category>Protecteur du coeur</category>
+		</item>
+		<item>
+			<title>zang maître du cœur vide</title>
+			<description> Liste des symptomes:Douleur soudaine sous les côtesGanglionsOublieuxPollution nocturneRespiration rapideS’effraye facilementTimiditéTranspiration spontanée pendant la journéeTroubles du rythme cardiaqueVisage pâleParanoïa</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=69</link>
+			<category>Protecteur du coeur</category>
+		</item>
+		<item>
+			<title>méridien du triple réchauffeur externe</title>
+			<description> Liste des symptomes:Congestion des jouesInflammation et douleur du pharynxObstruction pharyngienneSurdité et troubles de l'audition</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=70</link>
+			<category>Triple réchauffeur</category>
+		</item>
+		<item>
+			<title>méridien du triple réchauffeur interne</title>
+			<description> Liste des symptomes:Douleur à la commissure externe de l'œilDouleur le long du trajet du méridien avec paralysie de l'annulaire et de l'auriculaireInflammation axillaireOtalgieTranspiration</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=71</link>
+			<category>Triple réchauffeur</category>
+		</item>
+		<item>
+			<title>voie luo du triple réchauffeur pleine</title>
+			<description> Liste des symptomes:Contracture du coude</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=72</link>
+			<category>Triple réchauffeur</category>
+		</item>
+		<item>
+			<title>voie luo du triple réchauffeur vide</title>
+			<description> Liste des symptomes:Ne peut saisir les objets</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=73</link>
+			<category>Triple réchauffeur</category>
+		</item>
+		<item>
+			<title>jing jin du triple réchauffeur</title>
+			<description> Liste des symptomes:La langue a tendance à s'enrouler sur elle-mêmePeï du dernier mois d'étéTous les ligaments sont contractés</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=74</link>
+			<category>Triple réchauffeur</category>
+		</item>
+		<item>
+			<title>fu du triple réchauffeur supérieur vide et froid</title>
+			<description> Liste des symptomes:Manque de concentrationRespiration courte et rapideVoix faible</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=75</link>
+			<category>Triple réchauffeur</category>
+		</item>
+		<item>
+			<title>fu du triple réchauffeur supérieur plein et chaud</title>
+			<description> Liste des symptomes:Gorge enfléeHalètementLangue sècheLourdeur dans la poitrineTranspiration au front</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=76</link>
+			<category>Triple réchauffeur</category>
+		</item>
+		<item>
+			<title>fu du triple réchauffeur moyen vide et froid</title>
+			<description> Liste des symptomes:Distension douloureuse du ventre</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=77</link>
+			<category>Triple réchauffeur</category>
+		</item>
+		<item>
+			<title>fu du triple réchauffeur moyen plein et chaud</title>
+			<description> Liste des symptomes:Gaz dans l'abdomenRespiration rapide et superficielle</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=78</link>
+			<category>Triple réchauffeur</category>
+		</item>
+		<item>
+			<title>fu du triple réchauffeur inférieur vide et froid</title>
+			<description> Liste des symptomes:Diarrhées aqueuses continuellesŒdème, distension abdominaleUrine claire et longue</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=79</link>
+			<category>Triple réchauffeur</category>
+		</item>
+		<item>
+			<title>fu du triple réchauffeur inférieur plein et chaud</title>
+			<description> Liste des symptomes:Défécation et miction difficilesLes selles peuvent contenir du sang et du pus</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=80</link>
+			<category>Triple réchauffeur</category>
+		</item>
+		<item>
+			<title>méridien de la vésicule biliaire externe</title>
+			<description> Liste des symptomes:Bouche sèche et amèreDifficulté à la rotationFaiblesse musculaire des jambesPeau déshydratéePrécordialgieSensation de chaleur face externe du piedSoupirs fréquentsTeint terne et cendré</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=81</link>
+			<category>Vésicule Biliaire</category>
+		</item>
+		<item>
+			<title>méridien de la vésicule biliaire interne</title>
+			<description> Liste des symptomes:Douleur dans le trajet du méridien avec impossibilité de mouvoir le 4ème et le 5ème orteilDouleur de la mâchoire inférieureDouleur sous l'aisselle et sus-claviculaireDouleurs dans les os et articulationsFièvreFrisons incontrôlablesMigrainesSudation</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=82</link>
+			<category>Vésicule Biliaire</category>
+		</item>
+		<item>
+			<title>voie luo de la vésicule biliaire pleine</title>
+			<description> Liste des symptomes:Énergie en révolteExtrémités froides</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=83</link>
+			<category>Vésicule Biliaire</category>
+		</item>
+		<item>
+			<title>voie luo de la vésicule biliaire vide</title>
+			<description> Liste des symptomes:Jambes affaiblies, détendues, sans forceNe peut se lever quand on est assis</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=84</link>
+			<category>Vésicule Biliaire</category>
+		</item>
+		<item>
+			<title>jing jin de la vésicule biliaire</title>
+			<description> Liste des symptomes:Crampes du 4ème orteil et du molletIrradiation de la douleur du pubis au sacrum ainsi qu'aux reins, aux côtes flottantes et au xiiEL'articulation du genou ne peut fléchir ni s'étendrePeï du 1er mois de printempsQuand le côté gauche réagit, l'œil droit ne peut plus s'ouvrirSi il y a blessure de la bosse frontale, le pied opposé ne peu plus remuer</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=85</link>
+			<category>Vésicule Biliaire</category>
+		</item>
+		<item>
+			<title>fu vésicule biliaire plein</title>
+			<description> Liste des symptomes:Colères facilesDouleur dans la poitrineDouleur dans le cou lorsqu'on tourne la têteDouleurs articulaires multiplesMigraines</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=86</link>
+			<category>Vésicule Biliaire</category>
+		</item>
+		<item>
+			<title>fu vésicule biliaire vide</title>
+			<description> Liste des symptomes:Insomnie par soucisMastoïditePusillanimitéTête lourdeTremblements</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=87</link>
+			<category>Vésicule Biliaire</category>
+		</item>
+		<item>
+			<title>fu vésicule biliaire chaud</title>
+			<description> Liste des symptomes:Goût amerInsomnieIrritabilitéLourdeur dans la poitrineTendinitesVariation de températureVision brouilléeVomissements</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=88</link>
+			<category>Vésicule Biliaire</category>
+		</item>
+		<item>
+			<title>fu vésicule biliaire froid</title>
+			<description> Liste des symptomes:InsomnieVertige avec vomissements</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=89</link>
+			<category>Vésicule Biliaire</category>
+		</item>
+		<item>
+			<title>méridien du foie externe</title>
+			<description> Liste des symptomes:Gonflement du scrotum; hernie inguinaleLombalgie avec impossibilité de se pencher en avant ou en arrièrePour les femmes, inflammation du petit bassinSécheresse de la gorgeTeint sombre comme de la poussièreVue trouble</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=90</link>
+			<category>Foie</category>
+		</item>
+		<item>
+			<title>méridien du foie interne</title>
+			<description> Liste des symptomes:CystiteDiarrhée d'aliments non digérésPlénitude thoraciqueRétention ou incontinence d'urineVomissements</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=91</link>
+			<category>Foie</category>
+		</item>
+		<item>
+			<title>voie luo du foie pleine</title>
+			<description> Liste des symptomes:Allongement et crispation musculaire des organes génitaux</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=92</link>
+			<category>Foie</category>
+		</item>
+		<item>
+			<title>voie luo du foie vide</title>
+			<description> Liste des symptomes:Démangeaisons violentesSi contre-courant, enflure des testicules ou des ovaires</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=93</link>
+			<category>Foie</category>
+		</item>
+		<item>
+			<title>jing jin du foie</title>
+			<description> Liste des symptomes:Absence d'érectionDouleur côté interne du genou avec crampes à la cuisse du même côtéDouleur du gros orteil s'étendant sur la face antérieure de la malléole internePeï du dernier mois d'automneSi froid, pénis rétracté vers l'intérieur</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=94</link>
+			<category>Foie</category>
+		</item>
+		<item>
+			<title>zang foie plein</title>
+			<description> Liste des symptomes:Cardialgie soudaineColériqueConstipation avec spasme et douleurHémoptysieMembres courbés par tendons contractésSurditéToux et nez bouchéVomissement de bile</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=95</link>
+			<category>Foie</category>
+		</item>
+		<item>
+			<title>zang foie vide</title>
+			<description> Liste des symptomes:Dépression sévèreÉblouissementEngourdissementsMigrainesSpasmes de l'appareil génitalTintement d'oreilleVertiges</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=96</link>
+			<category>Foie</category>
+		</item>
+		<item>
+			<title>zang foie chaud</title>
+			<description> Liste des symptomes:Chaleur du foyer supérieur entraînant bouche sèche et amère, yeux rouges et enflésInsomnieMiction excessive et hématurieVertiges et céphalées</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=97</link>
+			<category>Foie</category>
+		</item>
+		<item>
+			<title>zang foie froid</title>
+			<description> Liste des symptomes:Douleur au scrotum et à l'abdomenÉpanchement testiculaireTendons contractés et douloureuxVomissements</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=98</link>
+			<category>Foie</category>
+		</item>
+		<item>
+			<title>Pathologie du Du Mai</title>
+			<description> Liste des symptomes:HémorroïdesSécheresse de la gorgeTête lourdeConvulsion épileptiforme, surtout chez les enfantsDysménorrhéesOpisthotonosPathologies uro-génitalesStérilitéTête vide</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=101</link>
+			<category>Du Mai</category>
+		</item>
+		<item>
+			<title>Pathologie du Ren Mai</title>
+			<description> Liste des symptomes:Douleur étranglante abdominale ascendante au cœur avec racine dans le sexe (homme)SpermatorrhéeDouleur ascendante au cœur (femme)Gastralgie (femme)Tumeur du bas-ventre (femme)Perte blanche ou rouge avec accumulation de concrétions fécales (femme)Troubles mictionnels (femme)</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=102</link>
+			<category>Ren Mai</category>
+		</item>
+		<item>
+			<title>Pathologie générale du Chong Mai</title>
+			<description> Liste des symptomes:Contraction du diaphragmeGorge serréeSensation de remontée énergétique pelvienne</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=103</link>
+			<category>Chong Mai</category>
+		</item>
+		<item>
+			<title>Pathologie de la branche inférieure du Chong Mai</title>
+			<description> Liste des symptomes:ŒdèmeDouleur profonde de la face interne de la jambe et de la cuisseSécheresse O.R.L.Pieds glacés</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=104</link>
+			<category>Chong Mai</category>
+		</item>
+		<item>
+			<title>Pathologie de la branche postérieure du Chong Mai</title>
+			<description> Liste des symptomes:AlopécieDouleur lombaireChaleur au cuir chevelu</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=105</link>
+			<category>Chong Mai</category>
+		</item>
+		<item>
+			<title>Pathologie de la branche antérieure du Chong Mai</title>
+			<description> Liste des symptomes:Blocage du diaphragme et dyspnéeColites et douleur abdominale aiguë qui reste en basDésordres gynécologiquesTrouble de l'avers localisé au menton</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=106</link>
+			<category>Chong Mai</category>
+		</item>
+		<item>
+			<title>Pathologie du Dai Mai</title>
+			<description> Liste des symptomes:ImpuissanceFatigue de la région lombaire, donne l'impression d'être assis dans de l'eau froideFatigue des membres inférieursGoutteLeucorrhéeProlapsus utérinRhumatismes généralisésVentre gonflé et tendu comme la peau d'un tambour</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=107</link>
+			<category>Dai Mai</category>
+		</item>
+		<item>
+			<title>Pathologie du Yang Qiao Mai</title>
+			<description> Liste des symptomes:Douleur lombaireInsomnieDouleur oculaire avec rougeur (œil grand ouvert)Agitation diurnePied ouvert sur l'externeContracture de la face externe du membre inférieur</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=108</link>
+			<category>Yang Qiao Mai</category>
+		</item>
+		<item>
+			<title>Pathologie du Yin Qiao Mai</title>
+			<description> Liste des symptomes:Douleur de gorgeDouleur lombaire irradiante vers les organes sexuels et l'aineHypersomnieAgitation nocturneŒil ferméPied tourné vers l'intérieur</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=109</link>
+			<category>Yin Qiao Mai</category>
+		</item>
+		<item>
+			<title>Pathologie du Yang Wei Mai</title>
+			<description> Liste des symptomes:Extrémités froidesAsthénieAlternance de froid et chaud</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=110</link>
+			<category>Yang Wei Mai</category>
+		</item>
+		<item>
+			<title>Pathologie du Yin Wei Mai</title>
+			<description> Liste des symptomes:Douleur cardiaque et thoraciqueDouleur sourde aux organes génitauxTristesse profondeGastralgie</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=111</link>
+			<category>Yin Wei Mai</category>
+		</item>
+		<item>
+			<title>voie luo du Du Mai pleine</title>
+			<description> Liste des symptomes:Dos raide et contracté</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=112</link>
+			<category>Du Mai</category>
+		</item>
+		<item>
+			<title>voie luo du Du Mai vide</title>
+			<description> Liste des symptomes:Tête lourde et tremblante</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=113</link>
+			<category>Du Mai</category>
+		</item>
+		<item>
+			<title>voie luo du Ren Mai pleine</title>
+			<description> Liste des symptomes:Douleur à la peau du ventre</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=114</link>
+			<category>Ren Mai</category>
+		</item>
+		<item>
+			<title>voie luo du Ren Mai vide</title>
+			<description> Liste des symptomes:Démangeaison du ventre</description>
+			<link>http://localhost:8888/index.php?page=patho&amp;idPatho=115</link>
+			<category>Ren Mai</category>
+		</item>
+</channel>
+</rss>

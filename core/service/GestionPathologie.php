@@ -59,7 +59,35 @@ class GestionPathologie {
         return $daoPathologie->recupererPatho($idPathologie);
     }
     
-    
+    /**
+	* Récupère la liste des pathologie et les transforme en flux RSS
+	* @return flux RSS de la liste des pathologies
+	*/
+    public static function creationRSSListePathologie(){
+        $rss= "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rss version=\"2.0\">\n\t<channel>\n"; // creation de l'entete du document rss
+        $rss= $rss."\t\t<title>Liste des Pathologies</title>\n\t\t<description>Liste des Pathologies avec leurs symtomes</description>\n";
+        $rss = $rss."\t\t<link>http://localhost:8888/index.php?page=patho</link>\n";
+        $rss =$rss."\t\t<lastBuildDate>".date('Y-m-d H:i:s')."</lastBuildDate>\n";
+        
+        $listePathologie=GestionPathologie::recupererListePathologies(null, null, null, null);
+        foreach ($listePathologie as $pathologie){
+            $rss = $rss."\t\t<item>\n";
+            $rss = $rss."\t\t\t<title>".$pathologie->_desc."</title>\n"; //ajout du nom de chaque pathologie
+            $rss = $rss."\t\t\t<description> Liste des symptomes:";
+            foreach ($pathologie->_listeSymptomes as $symptome){//ajout des symptomes
+                $rss = $rss. $symptome->_desc;
+            }
+            $rss = $rss."</description>\n";
+            $rss = $rss."\t\t\t<link>http://localhost:8888/index.php?page=patho&amp;idPatho=".$pathologie->_id."</link>\n"; //ajout du nom de chaque pathologie
+            $rss = $rss."\t\t\t<category>".$pathologie->_meridien->_nom."</category>\n"; //ajout du nom de chaque pathologie
+            $rss = $rss."\t\t</item>\n";
+        }
+        $rss=$rss."</channel>\n</rss>";// fermeture du document rss
+        $fichierListePatho = fopen(_RESOURCES_.'listePathologie.xml', 'a+');// ouverture du fichier
+        ftruncate($fichierListePatho,0); // on remet le fichier a vide
+        fputs($fichierListePatho,$rss); 
+        fclose($fichierListePatho);
+    }
     
 }
 	

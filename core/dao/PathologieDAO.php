@@ -82,7 +82,6 @@ class PathologieDAO {
              foreach ($filtres as $key => $value){
              	 $stmtPatho->bindParam($key, $value); 
              }  
-            var_dump($requete);
 			$stmtPatho->execute();
             
             // array avec les différents bindValue
