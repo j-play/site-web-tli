@@ -39,6 +39,7 @@
             	<ul class="nav">
                 	<li><a href="/index.php?page=index" >ACCUEIL</a></li>
                 	<li><a href="/index.php?page=patho">PATHOLOGIES</a></li>
+                    <li><a href="/index.php?page=rssListepathologies">RSS</a></li>
 				</ul>
         </nav>
     </header>
