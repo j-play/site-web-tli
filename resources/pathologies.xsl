@@ -10,12 +10,6 @@
 	<!-- Supprime les espaces blancs pour tous les éléments --> 
 	<xsl:strip-space elements="*"/>
 
-	<xsl:template match="node()|@*">
-		<xsl:copy>
-		  <xsl:apply-templates select="node()|@*"/>
-		</xsl:copy>
-  	</xsl:template>
-
 	<!-- On englobe le contenu des balises RSS avec <html> et <body> -->
 	<xsl:template match="rss">
     	<html><body>
@@ -46,8 +40,8 @@
     	<li>
       		<xsl:apply-templates/>
 			<span>
-				Nb symptome(s) :
-				<xsl:value-of select="functx:nombre-symptomes($pathDescription)"/>
+				(Nb symptome(s) :
+				<xsl:value-of select="functx:nombre-symptomes($pathDescription)"/>)
 			</span>
     	</li>
   	</xsl:template>
