@@ -9,7 +9,7 @@ class UtilisateurDAO {
 		try{
 			$stmtInsertionUtilisateur = $this->_bdd->prepare("INSERT INTO utilisateur (pseudo, mdp, mail) VALUES (:pseudo, :password, :email)");
 			$stmtInsertionUtilisateur->bindValue(':pseudo', $utlisateur->getPseudo());
-			$stmtInsertionUtilisateur->bindValue(':password', $utlisateur->getPassword());
+			$stmtInsertionUtilisateur->bindValue(':password', md5($utlisateur->getPassword()));
 			$stmtInsertionUtilisateur->bindValue(':email', $utlisateur->getEmail());
 			return $stmtInsertionUtilisateur->execute();
 			}

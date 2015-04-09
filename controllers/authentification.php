@@ -22,7 +22,7 @@
 			$password = htmlentities($_POST['password'], ENT_QUOTES, 'UTF-8');
 
 			// On vérifie la validité des identifiants et on récupère les informations sur l'utilisateur
-			$utilisateur = GestionAuthentification::authentUtilisateur($pseudo, $password);
+			$utilisateur = GestionAuthentification::authentUtilisateur($pseudo, md5($password));
 
 			if($utilisateur != NULL){
 				$_SESSION["pseudo"] = $utilisateur->getPseudo();
