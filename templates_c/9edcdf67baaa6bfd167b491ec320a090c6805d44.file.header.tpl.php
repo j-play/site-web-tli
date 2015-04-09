@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-08 09:50:52
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-09 18:39:41
          compiled from "/Users/Baptiste/github/site-web-tli/tpl/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3020546455503fab7360465-80211860%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9edcdf67baaa6bfd167b491ec320a090c6805d44' => 
     array (
       0 => '/Users/Baptiste/github/site-web-tli/tpl/header.tpl',
-      1 => 1428479448,
+      1 => 1428597574,
       2 => 'file',
     ),
   ),
@@ -28,11 +28,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <title>Acupuncture</title>
     
     <!-- Main CSS -->
-    <link href="/web/css/main.css" media="screen" rel="stylesheet">
-    <!-- Main JavaScript -->
-    <?php echo '<script'; ?>
- src="/web/js/main.js"><?php echo '</script'; ?>
->
+    <link href="/web/css/main.css" rel="stylesheet">
 </head>
 
 <body>

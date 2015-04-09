@@ -1,174 +1,260 @@
-html{
-	height: 100%;
-}
-body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	height: 100%;
-	width: 100%;
-	margin: 0%;
+/* CSS version écran */
+@media screen{
+    html{
+        height: 100%;
+    }
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        height: 100%;
+        width: 100%;
+        margin: 0%;
 
-}
-header{
-	background-image: url(/web/img/acupuncture_accueil.png);
-	background-color: #000000;
-	color: white;
-}
-main {
-	display: block;
-	height: 75%;
-    width: 100%;
-    margin: 0%;
-}
+    }
+    header{
+        background-image: url(/web/img/acupuncture_accueil.png);
+        background-color: #000000;
+        color: white;
+    }
+    main {
+        display: block;
+        height: 75%;
+        width: 100%;
+        margin: 0%;
+    }
 
-footer {
-	border-top-color: black;
-	border-top-style: solid;
-	border-top-width: thin;
-}
+    footer {
+        border-top-color: black;
+        border-top-style: solid;
+        border-top-width: thin;
+    }
 
-#titre {
-	width:20%;
-	display: inline-block;
-	padding-left: 2%;
-}
+    #titre {
+        width:20%;
+        display: inline-block;
+        padding-left: 2%;
+    }
 
-#connexion {
-	width: 74%;
-	display: inline-block;
-	list-style: none;
-	text-align: right;
-}
+    #connexion {
+        width: 74%;
+        display: inline-block;
+        list-style: none;
+        text-align: right;
+    }
 
-#connexion li {
-	display: inline;
-	padding-right: 2%;
-}
+    #connexion li {
+        display: inline;
+        padding-right: 2%;
+    }
 
-nav {
+    nav {
 
-	background-color: rgb(98, 98,98);
-}
+        background-color: rgb(98, 98,98);
+    }
 
-nav a{	
-	padding-top: 1%;
-	padding-bottom: 1%;
-	padding-right: 1%;
-	padding-left: 1%;
-	display: inline-block;
-	height: 100%;
-	color: white;
-	text-decoration:none;
-}
+    nav a{	
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-right: 1%;
+        padding-left: 1%;
+        display: inline-block;
+        height: 100%;
+        color: white;
+        text-decoration:none;
+    }
 
-nav a:hover{
-	background-color: #000000;
-}
-nav li {
-	display: inline;
-}
+    nav a:hover{
+        background-color: #000000;
+    }
+    nav li {
+        display: inline;
+    }
 
-.buttonHeader{
-	box-shadow: 0px 1px 0px 0px #1c1b18;	
-	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);	
-	background-color:#eae0c2;		
-	border-radius:15px;
-	border:1px solid #333029;	
-	display:inline-block;	
-	cursor:pointer;	
-	color:#505739;	
-	font-family:arial;	
-	font-size:14px;	
-	font-weight:bold;	
-	padding:5px 7px;	
-	text-decoration:none;	
-	text-shadow:0px 1px 0px #ffffff;
-}
+    .buttonHeader{
+        box-shadow: 0px 1px 0px 0px #1c1b18;	
+        background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);	
+        background-color:#eae0c2;		
+        border-radius:15px;
+        border:1px solid #333029;	
+        display:inline-block;	
+        cursor:pointer;	
+        color:#505739;	
+        font-family:arial;	
+        font-size:14px;	
+        font-weight:bold;	
+        padding:5px 7px;	
+        text-decoration:none;	
+        text-shadow:0px 1px 0px #ffffff;
+    }
 
-.buttonHeader:hover {	
-	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);	
-	background-color:#ccc2a6;
-}
-
-
-.buttonHeader:active {	
-	position:relative;
-	top:1px;
-}
+    .buttonHeader:hover {	
+        background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);	
+        background-color:#ccc2a6;
+    }
 
 
-#formConnexion{	
-	display: inline;
-}
-
-#form_inscription{
-	display: table;
-	border-collapse:separate; 
-	border-spacing: 10px 10px;
-}
-
-div.form_col {
-	display: table-row; 
-	
-}
-label.form_col {
-	display: table-cell;
-}
-
-input.form_col{
-	display: table-cell;
-}
-#pathologies {
-	height: 100%;
-    width: 100%;
-}
-
-#corps-patho {
-    width: 100%;
-	height: 87%;
-	border-top-color : black;
-	border-top-style: solid;
-	border-top-width: medium;
-}
-#filtres{
-	display: block;
-    width: 100%;
-	height: 5%;
-}
-
-#filtres select{
-    margin-right: 1%;
-    margin-left: 1%;
-    font-size: 14px;
-}
-
-#valid-filtres{
-    margin-left: 1%;  
-    font-size: 14px;
-}
-
-#liste-fiches{
-	width: 22%;
-	height: 100%;
-    overflow-y: scroll;
-	display: inline-block;
-	border-right-color: black;
-	border-right-style: solid;
-	border-right-width: medium;
-}
-
-#fiche-patho-select{
-	width: 72%;
-	display: inline-block;
-    vertical-align: top;
-}
-
-#info-footer{
-	text-align: center;
-}
-#titrePatho {
-    height: 7%;
-    width: 100%;
-    margin: 0%;
-}
+    .buttonHeader:active {	
+        position:relative;
+        top:1px;
+    }
 
 
+    #formConnexion{	
+        display: inline;
+    }
+
+    #form_inscription{
+        display: table;
+        border-collapse:separate; 
+        border-spacing: 10px 10px;
+    }
+
+    div.form_col {
+        display: table-row; 
+
+    }
+    label.form_col {
+        display: table-cell;
+    }
+
+    input.form_col{
+        display: table-cell;
+    }
+    #pathologies {
+        height: 100%;
+        width: 100%;
+    }
+
+    #corps-patho {
+        width: 100%;
+        height: 87%;
+        border-top-color : black;
+        border-top-style: solid;
+        border-top-width: medium;
+    }
+    #filtres{
+        display: block;
+        width: 100%;
+        height: 5%;
+    }
+
+    #filtres select{
+        margin-right: 1%;
+        margin-left: 1%;
+        font-size: 14px;
+    }
+
+    #valid-filtres{
+        margin-left: 1%;  
+        font-size: 14px;
+    }
+
+    #liste-fiches{
+        width: 22%;
+        height: 100%;
+        overflow-y: scroll;
+        display: inline-block;
+        border-right-color: black;
+        border-right-style: solid;
+        border-right-width: medium;
+    }
+
+    #fiche-patho-select{
+        width: 72%;
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    #info-footer{
+        text-align: center;
+    }
+    #titrePatho {
+        height: 7%;
+        width: 100%;
+        margin: 0%;
+    }
+}
+
+/* CSS version imprimable */
+@media print{
+    html{
+        height: 100%;
+    }
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        height: 100%;
+        width: 100%;
+        margin: 0%;
+
+    }
+    header{
+        display:none;
+    }
+    main {
+        display: block;
+        height: 75%;
+        width: 100%;
+        margin: 0%;
+    }
+
+    footer {
+       display: none;
+    }
+
+
+    nav {
+        display: none;
+    }
+
+
+    #formConnexion{	
+        display: inline;
+    }
+
+    #form_inscription{
+        display: table;
+        border-collapse:separate; 
+        border-spacing: 10px 10px;
+    }
+
+    div.form_col {
+        display: table-row; 
+
+    }
+    label.form_col {
+        display: table-cell;
+    }
+
+    input.form_col{
+        display: table-cell;
+    }
+    #pathologies {
+        height: 100%;
+        width: 100%;
+    }
+
+    #corps-patho {
+        width: 100%;
+        height: 87%;
+        border-top-color : black;
+        border-top-style: solid;
+        border-top-width: medium;
+    }
+    #filtres{
+        display: none;
+    }
+
+
+    #liste-fiches{
+        display: none;
+    }
+
+    #fiche-patho-select{
+        display: block;
+    }
+
+    #titrePatho {
+        height: 7%;
+        width: 100%;
+        margin: 0%;
+    }
+}

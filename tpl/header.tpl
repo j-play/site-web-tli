@@ -7,9 +7,7 @@
     <title>Acupuncture</title>
     
     <!-- Main CSS -->
-    <link href="/web/css/main.css" media="screen" rel="stylesheet">
-    <!-- Main JavaScript -->
-    <script src="/web/js/main.js"></script>
+    <link href="/web/css/main.css" rel="stylesheet">
 </head>
 
 <body>
