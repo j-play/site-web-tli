@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-08 08:08:11
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-09 18:52:21
          compiled from "/Users/jonathanplay/Documents/CPE/4IRC/S8/Web/site-web-tli/tpl/pages/patho.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:21184451435524c5cb81efc0-86663791%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '205809c1568b4b5945816aaab51713c576b70438' => 
     array (
       0 => '/Users/jonathanplay/Documents/CPE/4IRC/S8/Web/site-web-tli/tpl/pages/patho.tpl',
-      1 => 1428473249,
+      1 => 1428598336,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.21-dev',
+  'unifunc' => 'content_5524c5cb8bfb05_56427764',
   'variables' => 
   array (
     'listeMeridiens' => 0,
@@ -25,8 +27,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'symptome' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.21-dev',
-  'unifunc' => 'content_5524c5cb8bfb05_56427764',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5524c5cb8bfb05_56427764')) {function content_5524c5cb8bfb05_56427764($_smarty_tpl) {?><main>
 	<section id="pathologies">
@@ -88,9 +88,10 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien']['last']      
                 <option value ="i">Interne</option>
                 <option value ="e">Externe</option>
 			</select>
-				
+			<?php if (isset($_SESSION['pseudo'])) {?>	
 			<label for="filtre-mot-cle">Mot clé : </label>
-			<input id="filtre-mot-cle" type="text"/>
+			<input id="filtre-mot-cle" type="text" name="filtre-mot-cle"/>
+			<?php }?>
 			<input id="valid-filtres" type="submit" name="Valider"/>
 		</form>
 			

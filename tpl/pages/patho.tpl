@@ -33,9 +33,10 @@
                 <option value ="i">Interne</option>
                 <option value ="e">Externe</option>
 			</select>
-				
+			{if isset($smarty.session.pseudo)}	
 			<label for="filtre-mot-cle">Mot clé : </label>
-			<input id="filtre-mot-cle" type="text"/>
+			<input id="filtre-mot-cle" type="text" name="filtre-mot-cle"/>
+			{/if}
 			<input id="valid-filtres" type="submit" name="Valider"/>
 		</form>
 			

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-08 08:08:09
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-09 17:40:26
          compiled from "/Users/jonathanplay/Documents/CPE/4IRC/S8/Web/site-web-tli/tpl/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:21277896295524c5c9e2c074-60277555%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ab5e8f98a2d8258fc02f2cf76f2ef561ceb2bf14' => 
     array (
       0 => '/Users/jonathanplay/Documents/CPE/4IRC/S8/Web/site-web-tli/tpl/header.tpl',
-      1 => 1428356659,
+      1 => 1428530306,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.21-dev',
   'unifunc' => 'content_5524c5c9ed2fe5_37874088',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5524c5c9ed2fe5_37874088')) {function content_5524c5c9ed2fe5_37874088($_smarty_tpl) {?><!DOCTYPE html>
 
@@ -63,6 +63,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             	<ul class="nav">
                 	<li><a href="/index.php?page=index" >ACCUEIL</a></li>
                 	<li><a href="/index.php?page=patho">PATHOLOGIES</a></li>
+                    <li><a href="/index.php?page=rssListepathologies">RSS</a></li>
 				</ul>
         </nav>
     </header><?php }} ?>

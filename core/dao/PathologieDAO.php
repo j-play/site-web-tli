@@ -27,11 +27,10 @@ class PathologieDAO {
             $filtres = array();
             if($typePatho != '' || $meridien != '' || $caracPatho != '' || $motCle != ''){
             	$where = "WHERE ";
-               // $requete = $requete." WHERE ";
                 $first = false;
+				
                 if($meridien  != ''){
                 	$filtres[":meridien"] = $meridien ;
-                    echo $meridien; 
                 	$jointure = " JOIN meridien ON patho.mer = meridien.code ";
                 	if($first == false){
                     	$where= $where."patho.mer = :meridien";
@@ -54,7 +53,6 @@ class PathologieDAO {
                 }
                 if($caracPatho != ''){
                 	$caracPatho = "%".$caracPatho;
-                    echo $caracPatho; 
                 	$filtres[":caracPatho"] = $caracPatho;       	
                 	if($first == false){
 						$where= $where."patho.type LIKE :caracPatho";
@@ -71,6 +69,7 @@ class PathologieDAO {
                 	JOIN keywords ON keywords.idK = keySympt.idK ";
                 	if($first == false){
                     	$where= $where."name = :motCle";
+						$first = true;
                     }
                     else{
                     	$where= $where." AND name = :motCle";
@@ -82,6 +81,7 @@ class PathologieDAO {
              foreach ($filtres as $key => $value){
              	 $stmtPatho->bindParam($key, $value); 
              }  
+			
 			$stmtPatho->execute();
             
             // array avec les différents bindValue
@@ -101,6 +101,7 @@ class PathologieDAO {
                 // On récupere les symptomes pour chaque pathologie 
                 $stmtSymptome = $this->_bdd->prepare("SELECT * FROM symptome JOIN symptPatho ON symptome.idS = symptPatho.idS WHERE symptPatho.idP = :idPatho ");
                 $stmtSymptome->bindValue(':idPatho', $r['idP']);
+				
                 $stmtSymptome->execute();
                 $resultSymptome = $stmtSymptome->fetchAll();
                 $listeSymptome = array();
