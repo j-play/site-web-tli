@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-10 08:31:03
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-10 09:07:24
          compiled from "/Users/jonathanplay/Documents/CPE/4IRC/S8/Web/site-web-tli/tpl/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:21277896295524c5c9e2c074-60277555%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'ab5e8f98a2d8258fc02f2cf76f2ef561ceb2bf14' => 
     array (
       0 => '/Users/jonathanplay/Documents/CPE/4IRC/S8/Web/site-web-tli/tpl/header.tpl',
-      1 => 1428647461,
+      1 => 1428649546,
       2 => 'file',
     ),
   ),
@@ -38,29 +38,29 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<h1 id="titre">Acupuncture</h1>
     	
 		<!-- Informations utilisateur Boutons connexion/déconnexion -->
-		<form id="formConnexion" action="/index.php?page=authentification" method="POST">
+		<form id="formConnexion" action="/authentification" method="POST">
 		<ul id="connexion">
 			<?php if (isset($_SESSION['pseudo'])) {?>
 			<li><?php echo $_SESSION['pseudo'];?>
 </li>
-			<li><a href="/index.php?page=deconnexion" id="buttonDeconnexion" class= "buttonHeader">Déconnexion</a></li>
+			<li><a href="/deconnexion" id="buttonDeconnexion" class= "buttonHeader">Déconnexion</a></li>
 			<?php } else { ?>
 			<li><label for="pseudo">Nom :</label></li>
 			<li><input type="text" name="pseudo" id="pseudo"> </li>
 			<li><label for="password">Mot de Passe :</label></li>
 			<li><input type="password" name="password" id="password"> </li>
 			<li><button id="buttonConnexion" class= "buttonHeader">Connexion</button></li>
-			<li><a href="/index.php?page=inscription" id="buttonInscripton" class= "buttonHeader">Inscription</a></li>
+			<li><a href="/inscription" id="buttonInscripton" class= "buttonHeader">Inscription</a></li>
 			<?php }?>
 		</ul>
 		</form>
     	<!-- Menu de navigation -->
         <nav id="menu">
             	<ul class="nav">
-                	<li><a href="/index.php?page=index" >ACCUEIL</a></li>
-                	<li><a href="/index.php?page=patho">PATHOLOGIES</a></li>
-                    <li><a href="/index.php?page=rssListepathologies">RSS</a></li>
-					<li><a href="/index.php?page=webographie">WEBOGRAPHIE</a></li>
+                	<li><a href="/index" >ACCUEIL</a></li>
+                	<li><a href="/patho">PATHOLOGIES</a></li>
+                    <li><a href="/rssListepathologies">RSS</a></li>
+					<li><a href="/webographie">WEBOGRAPHIE</a></li>
 				</ul>
         </nav>
     </header><?php }} ?>

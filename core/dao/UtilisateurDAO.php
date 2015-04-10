@@ -39,7 +39,7 @@ class UtilisateurDAO {
 		try{
 			$stmtPseudoPassword = $this->_bdd->prepare("SELECT * FROM utilisateur WHERE pseudo = :pseudo AND mdp = :password");
 			$stmtPseudoPassword ->bindValue(':pseudo', $pseudo);
-			$stmtPseudoPassword ->bindValue(':password', $password);
+			$stmtPseudoPassword ->bindValue(':password', md5($password));
 			$stmtPseudoPassword ->execute();
 			$result = $stmtPseudoPassword ->fetch(PDO::FETCH_ASSOC);
 			if(isset($result["pseudo"])){;

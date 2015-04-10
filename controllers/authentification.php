@@ -22,16 +22,14 @@
 			$password = htmlentities($_POST['password'], ENT_QUOTES, 'UTF-8');
 
 			// On vérifie la validité des identifiants et on récupère les informations sur l'utilisateur
-			$utilisateur = GestionAuthentification::authentUtilisateur($pseudo, md5($password));
+			$utilisateur = GestionAuthentification::authentUtilisateur($pseudo, $password);
 
 			if($utilisateur != NULL){
 				$_SESSION["pseudo"] = $utilisateur->getPseudo();
 				$_SESSION["mail"] = $utilisateur->getEmail();
 			}
 			else{
-				echo 'isset marche pas ...';
-				// Les identifiants sont invalides
-				// TODO : afficher une erreur au client
+				echo 'Identifiants invalides.';
 			}
 		}
 		else{
