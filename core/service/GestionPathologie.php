@@ -66,7 +66,7 @@ class GestionPathologie {
     public static function creationRSSListePathologie(){
         $rss= "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rss version=\"2.0\">\n\t<channel>\n"; // creation de l'entete du document rss
         $rss= $rss."\t\t<title>Liste des Pathologies</title>\n\t\t<description>Liste des Pathologies avec leurs symtomes</description>\n";
-        $rss = $rss."\t\t<link>http://localhost:8888/index.php?page=patho</link>\n";
+        $rss = $rss."\t\t<link>http://localhost:8888/patho</link>\n";
         $rss =$rss."\t\t<lastBuildDate>".date('Y-m-d H:i:s')."</lastBuildDate>\n";
         
         $listePathologie=GestionPathologie::recupererListePathologies(null, null, null, null);
@@ -78,7 +78,7 @@ class GestionPathologie {
                 $rss = $rss. $symptome->_desc;
             }
             $rss = $rss."</description>\n";
-            $rss = $rss."\t\t\t<link>http://localhost:8888/index.php?page=patho&amp;idPatho=".$pathologie->_id."</link>\n"; //ajout du nom de chaque pathologie
+            $rss = $rss."\t\t\t<link>http://localhost:8888/patho?idPatho=".$pathologie->_id."</link>\n"; //ajout du nom de chaque pathologie
             $rss = $rss."\t\t\t<category>".$pathologie->_meridien->_nom."</category>\n"; //ajout du nom de chaque pathologie
             $rss = $rss."\t\t</item>\n";
         }

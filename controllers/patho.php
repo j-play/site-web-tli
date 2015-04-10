@@ -2,6 +2,7 @@
 	require_once(_CORE_.'beans/Pathologie.php');
 	require_once(_CORE_.'service/GestionPathologie.php');
     
+	// Si le contrôleur est appelé avec des filtres (hors du premier chargement de la page
     if(isset($_POST['filtre-tpatho'])){
         // Si on arrive dans le contrôlleur avec une requête POST (formulaire des filtres des pathologies
         $typePatho="";
@@ -27,6 +28,7 @@
         
     }
     else{
+		// On charge les différents listes présentes dans la page des pathologies
         $smarty->assign('listeMeridiens', GestionPathologie::recupererListeMeridiens());
         $smarty->assign('listePatho', GestionPathologie::recupererListePathologies(null, null, null, null));
         if(isset($_GET['idPatho']) && !empty($_GET['idPatho'])){

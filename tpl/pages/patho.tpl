@@ -1,7 +1,7 @@
 <main>
 	<section id="pathologies">
 		<h2 id="titrePatho">Pathologies</h2>
-		<form id="filtres" action="/index.php?page=patho" method="POST"> 
+		<form id="filtres" action="/patho" method="POST"> 
 			<label for="filtre-tpatho">Type de pathologie : </label>
 			<select id="filtre-tpatho" name="filtre-tpatho">
                 <option value="">Aucun</option>
@@ -47,7 +47,7 @@
                 {section name=itemPatho loop=$listePatho}
                 {assign var=patho value=$listePatho[itemPatho]}
                   <li id="{$patho->_id}">
-                      <a href="/index.php?page=patho&amp;idPatho={$patho->_id}">{$patho->_desc}</a>
+                      <a href="/patho?idPatho={$patho->_id}">{$patho->_desc}</a>
                   </li>
                 {/section}
                 </ul>
