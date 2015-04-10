@@ -1,10 +1,7 @@
 IMPORTANT : 
--> htaccess
 -> Webservice XML pathologie (+ tester dtd&schéma du coup)
--> Onglet webographie
--> Gérer les erreurs avec les entrées client (connexion, inscription)
--> Debugger filtres JOIN 
--> Crypter mot de passe
+-> Gérer les erreurs avec les entrées client (connexion, inscription) BONUS
+-> Debugger filtres JOIN BONUS
 
 BONUS : 
 -> Gestion des entrées clients avec des regex

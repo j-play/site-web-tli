@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE listepathologie [
+	<!ELEMENT description (#PCDATA)>
+	<!ELEMENT meridien (#PCDATA)>
+	<!ELEMENT symptome (#PCDATA)>
+	<!ELEMENT listesymptomes (symptome)*>
+	<!ELEMENT pathologie ((meridien)?, (description)?, (type)?, (listesymptomes)?)>
+	<!ELEMENT listepathologie (pathologie)*>
+
+	<!ATTLIST pathologie type (m | l | tf| l2 | j) #REQUIRED>
+	<!ATTLIST pathologie caracteristique (p | c | v | f | i | e) #REQUIRED>
+]>
+
+<listepathologie>
+    <pathologie type = "m" caracteristique ="e">
+        <meridien>Poumon</meridien>
+        <description>Description du poumon</description>
+        <listesymptomes>
+            <symptome>Symptome 1</symptome>
+            <symptome>Symptome 2</symptome>
+        </listesymptomes>
+    </pathologie>
+	<pathologie type = "l" caracteristique ="c">
+        <meridien>Coeur</meridien>
+        <description>Description du coeur</description>
+        <listesymptomes>
+            <symptome>Symptome 1</symptome>
+            <symptome>Symptome 2</symptome>
+        </listesymptomes>
+    </pathologie>
+	<pathologie type = "l2" caracteristique ="v">
+        <meridien>Jambe</meridien>
+        <description>Description du coeur</description>
+        <listesymptomes>
+            <symptome>Symptome 1</symptome>
+            <symptome>Symptome 2</symptome>
+        </listesymptomes>
+    </pathologie>
+</listepathologie> 
