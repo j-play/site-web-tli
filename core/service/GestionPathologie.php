@@ -8,7 +8,7 @@ require_once(_CORE_.'dao/MeridienDAO.php');
 require_once(_CORE_.'util/Database.php');
 
 /**
- * Classe service permettant d'inscrire un utlisateur
+ * Classe GestionPathologie
  *
  * @author Jonathan Play & Baptiste BOULAY 
  */
