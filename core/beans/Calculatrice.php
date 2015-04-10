@@ -21,7 +21,7 @@ class Calculatrice {
 	}
 	
 	public function division($operande1, $operande2){
-		if($operande2 === 0){
+		if($operande2 == 0){
 			return -1;
 		}
 		else{

@@ -1,2 +1,0 @@
-Smarty & MVC : http://fredods.com/creer-votre-site-avec-smarty-en-mvc-partie-1/
-SMarty : http://openclassrooms.com/courses/un-moteur-de-template-smarty
