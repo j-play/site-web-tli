@@ -78,7 +78,7 @@ class GestionPathologie {
                 $rss = $rss. $symptome->_desc;
             }
             $rss = $rss."</description>\n";
-            $rss = $rss."\t\t\t<link>http://localhost:8888/patho?idPatho=".$pathologie->_id."</link>\n"; //ajout du nom de chaque pathologie
+            $rss = $rss."\t\t\t<link>http://localhost:8888/patho/".$pathologie->_id."</link>\n"; //ajout du nom de chaque pathologie
             $rss = $rss."\t\t\t<category>".$pathologie->_meridien->_nom."</category>\n"; //ajout du nom de chaque pathologie
             $rss = $rss."\t\t</item>\n";
         }

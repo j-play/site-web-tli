@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-09 18:39:41
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-10 09:12:36
          compiled from "/Users/Baptiste/github/site-web-tli/tpl/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:3020546455503fab7360465-80211860%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9edcdf67baaa6bfd167b491ec320a090c6805d44' => 
     array (
       0 => '/Users/Baptiste/github/site-web-tli/tpl/header.tpl',
-      1 => 1428597574,
+      1 => 1428649947,
       2 => 'file',
     ),
   ),
@@ -38,28 +38,29 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 		<h1 id="titre">Acupuncture</h1>
     	
 		<!-- Informations utilisateur Boutons connexion/déconnexion -->
-		<form id="formConnexion" action="/index.php?page=authentification" method="POST">
+		<form id="formConnexion" action="/authentification" method="POST">
 		<ul id="connexion">
 			<?php if (isset($_SESSION['pseudo'])) {?>
 			<li><?php echo $_SESSION['pseudo'];?>
 </li>
-			<li><a href="/index.php?page=deconnexion" id="buttonDeconnexion" class= "buttonHeader">Déconnexion</a></li>
+			<li><a href="/deconnexion" id="buttonDeconnexion" class= "buttonHeader">Déconnexion</a></li>
 			<?php } else { ?>
 			<li><label for="pseudo">Nom :</label></li>
 			<li><input type="text" name="pseudo" id="pseudo"> </li>
 			<li><label for="password">Mot de Passe :</label></li>
 			<li><input type="password" name="password" id="password"> </li>
 			<li><button id="buttonConnexion" class= "buttonHeader">Connexion</button></li>
-			<li><a href="/index.php?page=inscription" id="buttonInscripton" class= "buttonHeader">Inscription</a></li>
+			<li><a href="/inscription" id="buttonInscripton" class= "buttonHeader">Inscription</a></li>
 			<?php }?>
 		</ul>
 		</form>
     	<!-- Menu de navigation -->
         <nav id="menu">
             	<ul class="nav">
-                	<li><a href="/index.php?page=index" >ACCUEIL</a></li>
-                	<li><a href="/index.php?page=patho">PATHOLOGIES</a></li>
-                    <li><a href="/index.php?page=rssListepathologies">RSS</a></li>
+                	<li><a href="/index" >ACCUEIL</a></li>
+                	<li><a href="/patho">PATHOLOGIES</a></li>
+                    <li><a href="/rssListepathologies">RSS</a></li>
+					<li><a href="/webographie">WEBOGRAPHIE</a></li>
 				</ul>
         </nav>
     </header><?php }} ?>

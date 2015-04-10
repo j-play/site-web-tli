@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-10 08:27:01
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-10 09:48:48
          compiled from "/Users/Baptiste/github/site-web-tli/tpl/pages/patho.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:934913891550e8e3bbe97c9-17747377%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4dd95cd324958115e54b829a718485ec57877e9f' => 
     array (
       0 => '/Users/Baptiste/github/site-web-tli/tpl/pages/patho.tpl',
-      1 => 1428599935,
+      1 => 1428652114,
       2 => 'file',
     ),
   ),
@@ -31,7 +31,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <?php if ($_valid && !is_callable('content_550e8e3bd03cb3_78512027')) {function content_550e8e3bd03cb3_78512027($_smarty_tpl) {?><main>
 	<section id="pathologies">
 		<h2 id="titrePatho">Pathologies</h2>
-		<form id="filtres" action="/index.php?page=patho" method="POST"> 
+		<form id="filtres" action="/patho" method="POST"> 
 			<label for="filtre-tpatho">Type de pathologie : </label>
 			<select id="filtre-tpatho" name="filtre-tpatho">
                 <option value="">Aucun</option>
@@ -126,7 +126,7 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['itemPatho']['last']       = 
                 <?php $_smarty_tpl->tpl_vars['patho'] = new Smarty_variable($_smarty_tpl->tpl_vars['listePatho']->value[$_smarty_tpl->getVariable('smarty')->value['section']['itemPatho']['index']], null, 0);?>
                   <li id="<?php echo $_smarty_tpl->tpl_vars['patho']->value->_id;?>
 ">
-                      <a href="/index.php?page=patho&amp;idPatho=<?php echo $_smarty_tpl->tpl_vars['patho']->value->_id;?>
+                      <a href="/patho/<?php echo $_smarty_tpl->tpl_vars['patho']->value->_id;?>
 "><?php echo $_smarty_tpl->tpl_vars['patho']->value->_desc;?>
 </a>
                   </li>

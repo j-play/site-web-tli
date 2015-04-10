@@ -47,7 +47,7 @@
                 {section name=itemPatho loop=$listePatho}
                 {assign var=patho value=$listePatho[itemPatho]}
                   <li id="{$patho->_id}">
-                      <a href="/patho?idPatho={$patho->_id}">{$patho->_desc}</a>
+                      <a href="/patho/{$patho->_id}">{$patho->_desc}</a>
                   </li>
                 {/section}
                 </ul>
