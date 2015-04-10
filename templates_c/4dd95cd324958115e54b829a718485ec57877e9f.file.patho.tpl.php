@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-07 18:22:14
+<?php /* Smarty version Smarty-3.1.21-dev, created on 2015-04-10 08:27:01
          compiled from "/Users/Baptiste/github/site-web-tli/tpl/pages/patho.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:934913891550e8e3bbe97c9-17747377%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '4dd95cd324958115e54b829a718485ec57877e9f' => 
     array (
       0 => '/Users/Baptiste/github/site-web-tli/tpl/pages/patho.tpl',
-      1 => 1428423730,
+      1 => 1428599935,
       2 => 'file',
     ),
   ),
@@ -88,9 +88,10 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['itemMeridien']['last']      
                 <option value ="i">Interne</option>
                 <option value ="e">Externe</option>
 			</select>
-				
+			<?php if (isset($_SESSION['pseudo'])) {?>	
 			<label for="filtre-mot-cle">Mot clé : </label>
-			<input id="filtre-mot-cle" type="text"/>
+			<input id="filtre-mot-cle" type="text" name="filtre-mot-cle"/>
+			<?php }?>
 			<input id="valid-filtres" type="submit" name="Valider"/>
 		</form>
 			
