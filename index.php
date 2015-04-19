@@ -6,9 +6,10 @@
 	// Gestion de Routing
 	/*if (isset($_GET['action']) && file_exists(_CTRL_.'action/'.str_replace('.', '', $_GET['action']).'.php'))
     	include(_CTRL_.'action/'.$_GET['action'].'.php');*/
-
+	$get = '';
 	if(isset($_GET['page']) && file_exists(_CTRL_.str_replace('.', '', $_GET['page']).'.php')){
     	include_once(_CTRL_.$_GET['page'].'.php');	
+		$get =$_GET['page'];
     }
 	else {
     	include_once(_CTRL_.'index.php');
@@ -16,7 +17,8 @@
     
     // Affichages
 
-	if($_GET['page'] != 'calculatrice'){
+	
+	if($get != 'calculatrice'){
 		
 		$smarty->display(_TPL_ . 'header.tpl');
 
